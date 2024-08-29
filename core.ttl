@@ -7,8 +7,8 @@
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 
-@prefix emobon: <https://data.emobon.embrc.eu/emobonontology#> .
-<https://data.emobon.embrc.eu/emobonontology>
+@prefix emobon: <https://data.emobon.embrc.eu/ns/core#> .
+<https://data.emobon.embrc.eu/ns/core>
   a owl:Ontology ;
   owl:versionIRI <http://www.embrc.eu/emobon/v.0.0.1/EmoBonOntology.rdf> ;
   rdfs:label "The EMO-BON Ontology"@en ;
@@ -31,39 +31,39 @@ schema:Thing
 .
 
 
-<https://data.emobon.embrc.eu/emobonontology#Observatory>
+<https://data.emobon.embrc.eu/ns/core#Observatory>
   a owl:Class ;
   rdfs:subClassOf schema:Thing, [
     a owl:Restriction ;
-    owl:onProperty <https://data.emobon.embrc.eu/emobonontology#broadBiome> ;
+    owl:onProperty <https://data.emobon.embrc.eu/ns/core#broadBiome> ;
     owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_00000428> ;
   ], [
     a owl:Restriction ;
-    owl:onProperty <https://data.emobon.embrc.eu/emobonontology#localBiome> ;
+    owl:onProperty <https://data.emobon.embrc.eu/ns/core#localBiome> ;
     owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_00000428> ;
   ], [
     a owl:Restriction ;
-    owl:onProperty <https://data.emobon.embrc.eu/emobonontology#geoLocation> ;
+    owl:onProperty <https://data.emobon.embrc.eu/ns/core#geoLocation> ;
     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     owl:onClass <http://www.opengis.net/ont/sf#Point> ;
   ], [
     a owl:Restriction ;
-    owl:onProperty <https://data.emobon.embrc.eu/emobonontology#sampleType> ;
+    owl:onProperty <https://data.emobon.embrc.eu/ns/core#sampleType> ;
     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onClass <https://data.emobon.embrc.eu/emobonontology#SampleType> ;
+    owl:onClass <https://data.emobon.embrc.eu/ns/core#SampleType> ;
   ], [
     a owl:Restriction ;
-    owl:onProperty <https://data.emobon.embrc.eu/emobonontology#marineRegion> ;
+    owl:onProperty <https://data.emobon.embrc.eu/ns/core#marineRegion> ;
     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     owl:onDataRange xsd:anyURI ;
   ], [
     a owl:Restriction ;
-    owl:onProperty <https://data.emobon.embrc.eu/emobonontology#observatoryId> ;
+    owl:onProperty <https://data.emobon.embrc.eu/ns/core#observatoryId> ;
     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     owl:onDataRange xsd:string ;
   ], [
     a owl:Restriction ;
-    owl:onProperty <https://data.emobon.embrc.eu/emobonontology#observatorySampleId> ;
+    owl:onProperty <https://data.emobon.embrc.eu/ns/core#observatorySampleId> ;
     owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     owl:onDataRange xsd:string ;
   ] ;
@@ -74,28 +74,28 @@ schema:Thing
 .
 
 
-<https://data.emobon.embrc.eu/emobonontology#SampleType>
+<https://data.emobon.embrc.eu/ns/core#SampleType>
   a owl:Class ;
   owl:equivalentClass [
     a owl:Class ;
     owl:oneOf (
-     <https://data.emobon.embrc.eu/emobonontology#Hard>
-     <https://data.emobon.embrc.eu/emobonontology#Soil>
-     <https://data.emobon.embrc.eu/emobonontology#Water>
+     <https://data.emobon.embrc.eu/ns/core#Hard>
+     <https://data.emobon.embrc.eu/ns/core#Soil>
+     <https://data.emobon.embrc.eu/ns/core#Water>
    )
   ] ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#Hard> 
-  a owl:NamedIndividual, <https://data.emobon.embrc.eu/emobonontology#SampleType> ;
+<https://data.emobon.embrc.eu/ns/core#Hard> 
+  a owl:NamedIndividual, <https://data.emobon.embrc.eu/ns/core#SampleType> ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#Soil> 
-  a owl:NamedIndividual, <https://data.emobon.embrc.eu/emobonontology#SampleType> ;
+<https://data.emobon.embrc.eu/ns/core#Soil> 
+  a owl:NamedIndividual, <https://data.emobon.embrc.eu/ns/core#SampleType> ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#Water> 
-  a owl:NamedIndividual, <https://data.emobon.embrc.eu/emobonontology#SampleType> ;
+<https://data.emobon.embrc.eu/ns/core#Water> 
+  a owl:NamedIndividual, <https://data.emobon.embrc.eu/ns/core#SampleType> ;
 .
 
 schema:Organization
@@ -163,26 +163,26 @@ schema:ContactPoint
 .
 
 #### CLASSES Sample Extension ####
-<https://data.emobon.embrc.eu/emobonontology#siteInfo>
+<https://data.emobon.embrc.eu/ns/core#siteInfo>
     a owl:Class ; 
-    rdfs:isDefinedBy <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment "Extra information on the sampling site, in particular concerning other data collections from the same area, environmental activities or events, etc." ; 
     rdfs:label "Sampling site information" ; 
     rdfs:subClassOf rdfs:comment ;
 .
 
 #### CLASSES Sequence Extension ####
-<https://data.emobon.embrc.eu/emobonontology#SequencingRun>
+<https://data.emobon.embrc.eu/ns/core#SequencingRun>
     a owl:Class ; 
-    rdfs:isDefinedBy <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment "A sequencing run activity" ; 
     rdfs:label "A sequencing run" ; 
     rdfs:subClassOf prov:Activity ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#Batch>
+<https://data.emobon.embrc.eu/ns/core#Batch>
     a owl:Class ; 
-    rdfs:isDefinedBy <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment "A batch in a sequencing run" ; 
     rdfs:label "A batch in a sequencing run" ; 
     rdfs:subClassOf prov:Entity ;
@@ -190,30 +190,30 @@ schema:ContactPoint
 
 
 ### PROPERTIES ###
-<https://data.emobon.embrc.eu/emobonontology#hasBiome>
+<https://data.emobon.embrc.eu/ns/core#hasBiome>
   a owl:ObjectProperty ;
-  rdfs:domain <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+  rdfs:domain <https://data.emobon.embrc.eu/ns/core#Observatory> ;
   rdfs:range <http://purl.obolibrary.org/obo/ENVO_00000428> ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#broadBiome>
+<https://data.emobon.embrc.eu/ns/core#broadBiome>
   a owl:ObjectProperty ;
-  rdfs:subPropertyOf <https://data.emobon.embrc.eu/emobonontology#hasBiome> ;
+  rdfs:subPropertyOf <https://data.emobon.embrc.eu/ns/core#hasBiome> ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#localBiome>
+<https://data.emobon.embrc.eu/ns/core#localBiome>
   a owl:ObjectProperty ;
-  rdfs:subPropertyOf <https://data.emobon.embrc.eu/emobonontology#hasBiome> ;
+  rdfs:subPropertyOf <https://data.emobon.embrc.eu/ns/core#hasBiome> ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#geoLocation>
+<https://data.emobon.embrc.eu/ns/core#geoLocation>
   a owl:ObjectProperty ;
   rdfs:range <http://www.opengis.net/ont/sf#Point> ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#sampleType>
+<https://data.emobon.embrc.eu/ns/core#sampleType>
   a owl:ObjectProperty ;
-  rdfs:range <https://data.emobon.embrc.eu/emobonontology#SampleType> ;
+  rdfs:range <https://data.emobon.embrc.eu/ns/core#SampleType> ;
 .
 
 schema:address
@@ -222,26 +222,26 @@ schema:address
 .
 
 
-<https://data.emobon.embrc.eu/emobonontology#marineRegion>
+<https://data.emobon.embrc.eu/ns/core#marineRegion>
   a owl:DatatypeProperty ;
   rdfs:range xsd:anyURI ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#observatoryId>
+<https://data.emobon.embrc.eu/ns/core#observatoryId>
   a owl:DatatypeProperty ;
-  rdfs:domain <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+  rdfs:domain <https://data.emobon.embrc.eu/ns/core#Observatory> ;
   rdfs:range xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#observatorySampleId>
+<https://data.emobon.embrc.eu/ns/core#observatorySampleId>
   a owl:DatatypeProperty ;
-  rdfs:domain <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+  rdfs:domain <https://data.emobon.embrc.eu/ns/core#Observatory> ;
   rdfs:range xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#edmoId>
+<https://data.emobon.embrc.eu/ns/core#edmoId>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain <https://data.emobon.embrc.eu/emobonontology#Organization> ;
+  rdfs:domain <https://data.emobon.embrc.eu/ns/core#Organization> ;
   rdfs:range xsd:positiveInteger ;
 .
 
@@ -283,157 +283,157 @@ schema:streetAddress
 .
 
 #### PROPERTIES Sample Extension ####
-<https://data.emobon.embrc.eu/emobonontology#linkedToObservatory> 
+<https://data.emobon.embrc.eu/ns/core#linkedToObservatory> 
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "The observatory that is linked to the sampling event."@en ;
     rdfs:label            "is linked to observatory"@en ;
     rdfs:domain           sosa:Sampling ;
-    rdfs:range            <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+    rdfs:range            <https://data.emobon.embrc.eu/ns/core#Observatory> ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#enaProjAccNum>
+<https://data.emobon.embrc.eu/ns/core#enaProjAccNum>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "ENA project accession number associated to this observatory."@en ;
     rdfs:label          "has ENA project accession number"@en ;
     rdfs:domain         schema:Project ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#enaStudyAccNum>
+<https://data.emobon.embrc.eu/ns/core#enaStudyAccNum>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "ENA study accession number associated to the observatory."@en ;
     rdfs:label          "has ENA study accession number"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#enaSampleAccNum>
+<https://data.emobon.embrc.eu/ns/core#enaSampleAccNum>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "ENA sample accession number associated with the sample."@en ;
     rdfs:label          "has ENA sample accession number"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#hasMixsPackage>
+<https://data.emobon.embrc.eu/ns/core#hasMixsPackage>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The MIxS extension for reporting of measurements and observations obtained from one or more of the environments where a sample was obtained"@en ;
     rdfs:label          "has Mixs Package"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#marineRegionName>
+<https://data.emobon.embrc.eu/ns/core#marineRegionName>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The name of the marine region"@en ;
     rdfs:label          "Name associated with the marine region."@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#waterColumnDepth>
+<https://data.emobon.embrc.eu/ns/core#waterColumnDepth>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Measument of the total depth of the water column in meters"@en ;
     rdfs:label          "Total depth of water column"@en ;
     rdfs:domain         [
                             a owl:Class ; 
                             owl:unionOf (
                                 sosa:Sampling
-                                <https://data.emobon.embrc.eu/emobonontology#Observatory>
+                                <https://data.emobon.embrc.eu/ns/core#Observatory>
                             ) ; 
                         ] ;
     rdfs:range          xsd:nonNegativeInteger ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#originCountry>
+<https://data.emobon.embrc.eu/ns/core#originCountry>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The geographical origin of the sample as defined by the country name."@en ;
     rdfs:label          "Country of origin of the sample"@en ;
     rdfs:domain         [
                             a owl:Class ; 
                             owl:unionOf (
                                 sosa:Sampling
-                                <https://data.emobon.embrc.eu/emobonontology#Observatory>
+                                <https://data.emobon.embrc.eu/ns/core#Observatory>
                             ) ; 
                         ] ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#soilType>
+<https://data.emobon.embrc.eu/ns/core#soilType>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Information about the sediment type of the sample based on major constituents"@en ;
     rdfs:label          "Sediment type of a soil sample"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Observatory> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> ;
     rdfs:range          xsd:string ;
 .
 
 
-<https://data.emobon.embrc.eu/emobonontology#samplingDepth>
+<https://data.emobon.embrc.eu/ns/core#samplingDepth>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Measument of the sampling depth of the water column in meters"@en ;
     rdfs:label          "Sampling depth of water column"@en ;
     rdfs:domain         sosa:Sampling;
     rdfs:range          xsd:nonNegativeInteger ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#sampleDepth>
+<https://data.emobon.embrc.eu/ns/core#sampleDepth>
     a                   owl:DatatypeProperty ; 
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Measument of the sample depth of the water column in meters"@en ;
     rdfs:label          "Sampling depth of water column"@en ;
     rdfs:domain         sosa:Sample;
     rdfs:range          xsd:nonNegativeInteger ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#tidalStage>
+<https://data.emobon.embrc.eu/ns/core#tidalStage>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Tidal stage at the moment of the sampling event, expected values are: low_tide, ebb_tide, flood_tide, high_tide"@en ;
     rdfs:label          "Tidal stage"@en ;
     rdfs:domain         sosa:Sampling;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#storageTemp>
+<https://data.emobon.embrc.eu/ns/core#storageTemp>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Temperature at which the sample was stored during a storage activity."@en ;
     rdfs:label          "Storage temperature"@en ;
     rdfs:domain         prov:Activity ;
     rdfs:range          xsd:float ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#storageLoc>
+<https://data.emobon.embrc.eu/ns/core#storageLoc>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Location at which the sample was stored during a storage activity."@en ;
     rdfs:label          "Storage location"@en ;
     rdfs:domain         prov:Activity ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#longStorage>
+<https://data.emobon.embrc.eu/ns/core#longStorage>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Indicates if the sample is stored long term."@en ;
     rdfs:label          "Long storage"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:boolean ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#membrCut>
+<https://data.emobon.embrc.eu/ns/core#membrCut>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Indicates if the membrane was cut in half after filtration"@en ;
     rdfs:label          "Membrane cut"@en ;
     rdfs:domain         sosa:Sample ;
@@ -441,18 +441,18 @@ schema:streetAddress
 .
 
 ## note on range: most values will be xsd:float, but xsd:string also in data (see term definition) 
-<https://data.emobon.embrc.eu/emobonontology#filtrationTime>
+<https://data.emobon.embrc.eu/ns/core#filtrationTime>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Indicates how long from sampling until start of filtration, 'fi' indicates filtration was done in the field."@en ;
     rdfs:label          "Filtration time"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#hasSampleSize>
+<https://data.emobon.embrc.eu/ns/core#hasSampleSize>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The size of the collected sample"@en ;
     rdfs:label          "has ENA sample accession number"@en ;
     rdfs:domain         sosa:Sample ;
@@ -460,54 +460,54 @@ schema:streetAddress
 .
 
 #note: if values could be converted to T ~ true|1 and F ~ false|0 then datatype can be xsd:boolean
-<https://data.emobon.embrc.eu/emobonontology#failure>
+<https://data.emobon.embrc.eu/ns/core#failure>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Indication of failure in data generation, which may have occured at any stage of the workflow; takes True (T) or False (F) values."@en ;
     rdfs:label          "sample failure"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#failureComment>
+<https://data.emobon.embrc.eu/ns/core#failureComment>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Desciption of failure cause"@en ;
     rdfs:label          "sample failure comment"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#sampleReplicate>
+<https://data.emobon.embrc.eu/ns/core#sampleReplicate>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Replicate number of the sample or Blank"@en ;
     rdfs:label          "sample replicate"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#filterSizeRange>
+<https://data.emobon.embrc.eu/ns/core#filterSizeRange>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The Range of sieve pore size used to pre-filter/pre-sort and retain the macrobenthos sample."@en ;
     rdfs:label          "filter size range"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#lowerFilterSize>
+<https://data.emobon.embrc.eu/ns/core#lowerFilterSize>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The sieve pore size used to pre-filter/pre-sort the macrobenthos sample. Materials larger than the size threshold are excluded from the sample."@en ;
     rdfs:label          "lower filter size"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:float ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#upperFilterSize>
+<https://data.emobon.embrc.eu/ns/core#upperFilterSize>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The sieve pore size used to retain the macrobenthos sample. Materials smaller than the size threshold are excluded from the sample"@en ;
     rdfs:label          "upper filter size"@en ;
     rdfs:domain         sosa:Sample ;
@@ -515,74 +515,74 @@ schema:streetAddress
 .
 
 #### PROPERTIES Sequence Extension (Batch) ####
-<https://data.emobon.embrc.eu/emobonontology#associatedBatch>
+<https://data.emobon.embrc.eu/ns/core#associatedBatch>
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "The batch associated with as sequencing run"@en ;
     rdfs:label            "associated batch"@en ;
-    rdfs:domain           <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
-    rdfs:range            <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain           <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
+    rdfs:range            <https://data.emobon.embrc.eu/ns/core#Batch> ;
 .
-<https://data.emobon.embrc.eu/emobonontology#associatedSample>
+<https://data.emobon.embrc.eu/ns/core#associatedSample>
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "The sample associated with a batch"@en ;
     rdfs:label            "associated sample"@en ;
-    rdfs:domain           <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain           <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range            sosa:Sample, prov:Entity ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#batchProcessingReady>
+<https://data.emobon.embrc.eu/ns/core#batchProcessingReady>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Indication whether batch is processing ready"@en ;
     rdfs:label          "batch processing ready"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          xsd:boolean ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#batchProductionDeployment>
+<https://data.emobon.embrc.eu/ns/core#batchProductionDeployment>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Indication whether batch is ready for production deployment"@en ;
     rdfs:label          "batch production deployment"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          xsd:boolean ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#batchSender>
+<https://data.emobon.embrc.eu/ns/core#batchSender>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The sender of a batch"@en ;
     rdfs:label          "batch sender"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#batchReceiver>
+<https://data.emobon.embrc.eu/ns/core#batchReceiver>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The receiver of a batch"@en ;
     rdfs:label          "batch receiver"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#batchNumber>
+<https://data.emobon.embrc.eu/ns/core#batchNumber>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The batch number"@en ;
     rdfs:label          "batch number"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          xsd:integer ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#batchStatus>
+<https://data.emobon.embrc.eu/ns/core#batchStatus>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The status of the batch"@en ;
     rdfs:label          "batch status"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          [
                           a owl:DataRange ; 
                           owl:oneof (
@@ -594,130 +594,130 @@ schema:streetAddress
                         ] ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#shippingDate>
+<https://data.emobon.embrc.eu/ns/core#shippingDate>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The date when the batch was shipped"@en ;
     rdfs:label          "shipping date"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          xsd:date ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#arrivalDate>
+<https://data.emobon.embrc.eu/ns/core#arrivalDate>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "The date when the batch arrived"@en ;
     rdfs:label          "arrival date"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#Batch> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Batch> ;
     rdfs:range          xsd:date ; 
 .
 
 #### PROPERTIES Sequence Extension (SequencingRun) ####
-<https://data.emobon.embrc.eu/emobonontology#sop>
+<https://data.emobon.embrc.eu/ns/core#sop>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Standard operating procedures used in the sequencing molecular work"@en ;
     rdfs:label          "relevant standard operating procedures for the sequencing work"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string, xsd:anyURI ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#electronicResource>
+<https://data.emobon.embrc.eu/ns/core#electronicResource>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Relevant electronic resources for the sequencing molecular work. Resources may be provided for any of the steps/methods followed"@en ;
     rdfs:label          "relevant electronic resources for the sequencing work"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string, xsd:anyURI ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#proMockSeqReadsFile>
+<https://data.emobon.embrc.eu/ns/core#proMockSeqReadsFile>
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "Filename given by the sequencing centre to the sequencing reads produced by the prokaryote mock community included in the same sequencing run as the sample"@en ;
     rdfs:label            "correspoding prokaryotes mock community sequencing reads filename"@en ;
-    rdfs:domain           <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain           <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range            emobon:SequencingReadsFile , schema:CreativeWork ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#eukMockSeqReadsFile>
+<https://data.emobon.embrc.eu/ns/core#eukMockSeqReadsFile>
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "Filename given by the sequencing centre to the sequencing reads produced by the eukaryote mock community included in the same sequencing run as the sample"@en ;
     rdfs:label            "correspoding eukaryotes mock community sequencing reads filename"@en ;
-    rdfs:domain           <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain           <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range            emobon:SequencingReadsFile , schema:CreativeWork ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#seqReadsFile>
+<https://data.emobon.embrc.eu/ns/core#seqReadsFile>
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "Filename given by the sequencing centre to the sequencing reads produced"@en ;
     rdfs:label            "sequencing reads filename"@en ;
-    rdfs:domain           <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain           <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range            emobon:SequencingReadsFile , schema:CreativeWork ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#enaRunAccNum>
+<https://data.emobon.embrc.eu/ns/core#enaRunAccNum>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "ENA run accession number associated to the sequencing run."@en ;
     rdfs:label          "has ENA run accession number"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#dnaConcentration>
+<https://data.emobon.embrc.eu/ns/core#dnaConcentration>
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "DNA concentration measured, using a specified DNA concentration measurement method, after DNA extraction"@en ;
     rdfs:label            "dna concentration after extraction"@en ;
-    rdfs:domain           <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain           <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range            sosa:Observation ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#dnaQuantity_PostExtraction>
+<https://data.emobon.embrc.eu/ns/core#dnaQuantity_PostExtraction>
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment          "Total DNA quantity calculated from the DNA concentration measured after extraction"@en ;
     rdfs:label            "dna quantity after extraction"@en ;
-    rdfs:domain           <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain           <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range            sosa:Result, qudt:QuantityValue ;
 .
 
-<https://data.emobon.embrc.eu/emobonontology#pcrConditions>
+<https://data.emobon.embrc.eu/ns/core#pcrConditions>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Description of reaction conditions and components of PCR in the form of  'initial denaturation:94degC_1.5min; annealing=...'. If the sample is used for metagenomics add 'metag'"@en ;
     rdfs:label          "pcr conditions"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#pcrPrimers>
+<https://data.emobon.embrc.eu/ns/core#pcrPrimers>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "PCR primers that were used to amplify the sequence of the targeted gene, locus or subfragment. This field should contain all the primers used for a single PCR reaction if multiple forward or reverse primers are present in a single PCR reaction. The primer sequence should be reported in uppercase letters. If the sample is used for metagenomics add 'metag'"@en ;
     rdfs:label          "pcr primers"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#libLayout>
+<https://data.emobon.embrc.eu/ns/core#libLayout>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Specify whether to expect single, paired, or other configuration of reads"@en ;
     rdfs:label          "library layout"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#analysisWorkflow>
+<https://data.emobon.embrc.eu/ns/core#analysisWorkflow>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Analysis workflow followed"@en ;
     rdfs:label          "target gene"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          [
                           a owl:DataRange ; 
                           owl:oneof (
@@ -734,84 +734,84 @@ schema:streetAddress
                         ] ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#targetGene>
+<https://data.emobon.embrc.eu/ns/core#targetGene>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Targeted gene or locus name for marker gene studies (e.g. for metabarcoding). If the sample is used for metagenomics add 'metag'"@en ;
     rdfs:label          "target gene"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#targetSubfragment>
+<https://data.emobon.embrc.eu/ns/core#targetSubfragment>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Name of subfragment of a gene or locus. Important to e.g. identify special regions on marker genes like V6 on 16S rRNA. If the sample is used for metagenomics add 'metag'"@en ;
     rdfs:label          "target subfragment"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#nucleidAcidExtractionSource>
+<https://data.emobon.embrc.eu/ns/core#nucleidAcidExtractionSource>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the material separation to recover the nucleic acid fraction from a sample"@en ;
     rdfs:label          "nucleic acid extraction"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:anyURI ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#nucleidAcidAmplificationSource>
+<https://data.emobon.embrc.eu/ns/core#nucleidAcidAmplificationSource>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "A link to a literature reference, electronic resource or a standard operating procedure (SOP), that describes the enzymatic amplification (PCR, TMA, NASBA) of specific nucleic acids. If the sample is used for metagenomics add 'metag'"@en ;
     rdfs:label          "nucleic acid amplification"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:anyURI ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#countOfLibReads>
+<https://data.emobon.embrc.eu/ns/core#countOfLibReads>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Total number of clones sequenced from the library"@en ;
     rdfs:label          "library reads sequenced"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:integer ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#seqMethod>
+<https://data.emobon.embrc.eu/ns/core#seqMethod>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Sequencing method used; e.g. Sanger, pyrosequencing, ABI-solid"@en ;
     rdfs:label          "sequencing method"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#seqQuality>
+<https://data.emobon.embrc.eu/ns/core#seqQuality>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Indicate if the sequence has been called by automatic systems (none) or undergone a manual editing procedure (e.g. by inspecting the raw data or chromatograms). Applied only for sequences that are not submitted to SRA,ENA or DRA"@en ;
     rdfs:label          "sequence quality check"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#adapters>
+<https://data.emobon.embrc.eu/ns/core#adapters>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Adapters provide priming sequences for both amplification and sequencing of the sample-library fragments. Both adapters should be reported; in uppercase letters"@en ;
     rdfs:label          "adapters"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
-<https://data.emobon.embrc.eu/emobonontology#multiplexID>
+<https://data.emobon.embrc.eu/ns/core#multiplexID>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/emobonontology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
     rdfs:comment        "Molecular barcodes, called Multiplex Identifiers (MIDs), that are used to specifically tag unique samples in a sequencing run. Sequence should be reported in uppercase letters"@en ;
     rdfs:label          "multiplex identifiers"@en ;
-    rdfs:domain         <https://data.emobon.embrc.eu/emobonontology#SequencingRun> ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
 
