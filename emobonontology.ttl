@@ -11,6 +11,7 @@
 <{{baseuri}}/{{name}}>
   a owl:Ontology ;
   owl:versionIRI <http://www.embrc.eu/emobon/v.0.0.1/EmoBonOntology.rdf> ;
+  rdfs:label "The EMO-BON Ontology"@en ;
 .
 
 ### CLASSES ###
