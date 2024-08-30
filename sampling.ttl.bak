@@ -13,7 +13,7 @@
 
 <http://www.embrc.eu/emobon/EmoBonOntology>
   a owl:Ontology ;
-  owl:versionIRI <http://www.embrc.eu/emobon/v.0.0.2/EmoBonOntology.rdf> ;
+  owl:versionIRI <{{baseuri}}/{{name}}.ttl> ;
   foaf:homepage  <https://marineregions.org/ontology/documentation.html> ;
   rdfs:label     "The EMO-BON Ontology"@en ;
   rdfs:comment   "The EMO-BON ontology provides definitions for the classes and properties used in EMO-BON data."@en ;

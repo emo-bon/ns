@@ -10,7 +10,7 @@
 @prefix emobon: <https://data.emobon.embrc.eu/ns/core#> .
 <https://data.emobon.embrc.eu/ns/core>
   a owl:Ontology ;
-  owl:versionIRI <http://www.embrc.eu/emobon/v.0.0.1/EmoBonOntology.rdf> ;
+  owl:versionIRI <https://data.emobon.embrc.eu/ns/core.ttl> ;
   rdfs:label "The EMO-BON Ontology"@en ;
 .
 
