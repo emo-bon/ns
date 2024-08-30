@@ -8,3 +8,7 @@
 7,2024-08-30,"SYNTHETIC","synthetic analysis workflow","synt",,
 8,2024-08-30,"VIRAL RNA","viral rna analysis workflow","viral",,
 9,2024-08-30,"OTHER","other type analysis workflow","other",,
+1,2024-08-30,"manual","batch status is manual","manual",,
+2,2024-08-30,"test","batch is being tested","test",,
+3,2024-08-30,"processing","batch is being processed","processing",,
+4,2024-08-30,"done","batch status is done","done ",,
