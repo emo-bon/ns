@@ -9,6 +9,7 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix qudt: <http://qudt.org/schema/qudt/>.
 
 @prefix emobon-core: <{{baseuri}}/core#> .
 @prefix emobon-sampling: <{{baseuri}}/sampling#> .
