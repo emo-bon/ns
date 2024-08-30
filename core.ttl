@@ -320,3 +320,11 @@ geo:wktLiteral
 <http://www.w3.org/ns/shacl#IRI> 
   a rdfs:Datatype ;
 .
+<https://data.emobon.embrc.eu/ns/core#3>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          "3" ;
+        skos:prefLabel         "Water"@en ;
+        skos:definition        "Water sample type"@en ;
+        skos:altLabel          "water"
+        .

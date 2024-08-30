@@ -387,11 +387,11 @@
     rdfs:domain         <https://data.emobon.embrc.eu/ns/sequence#SequencingRun> ;
     rdfs:range          xsd:string ; 
 .
-<https://data.emobon.embrc.eu/ns/sequence#9>
+<https://data.emobon.embrc.eu/ns/sequence#4>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
-        dc:identifier          "9" ;
-        skos:prefLabel         "OTHER"@en ;
-        skos:definition        "other type analysis workflow"@en ;
-        skos:altLabel          "other"
+        dc:identifier          "4" ;
+        skos:prefLabel         "done"@en ;
+        skos:definition        "batch status is done"@en ;
+        skos:altLabel          "done "
         .
