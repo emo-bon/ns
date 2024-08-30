@@ -10,7 +10,7 @@
 @prefix emobon: <{{baseuri}}/{{name}}#> .
 <{{baseuri}}/{{name}}>
   a owl:Ontology ;
-  owl:versionIRI <http://www.embrc.eu/emobon/v.0.0.1/EmoBonOntology.rdf> ;
+  owl:versionIRI <{{baseuri}}/{{name}}.ttl> ;
   rdfs:label "The EMO-BON Ontology"@en ;
 .
 
