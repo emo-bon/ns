@@ -9,14 +9,18 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix prov: <http://www.w3.org/ns/prov#> . 
-@prefix emobon: <http://www.embrc.eu/emobon/EmoBonOntology#> .
+@prefix qudt: <http://qudt.org/schema/qudt/>.
 
-<http://www.embrc.eu/emobon/EmoBonOntology>
+@prefix emobon-core: <https://data.emobon.embrc.eu/ns/core#> .
+@prefix emobon-sampling: <https://data.emobon.embrc.eu/ns/sampling#> .
+@prefix emobon-sequence: <https://data.emobon.embrc.eu/ns/sequence#> .
+
+<https://data.emobon.embrc.eu/ns/sampling>
   a owl:Ontology ;
   owl:versionIRI <https://data.emobon.embrc.eu/ns/sampling.ttl> ;
   foaf:homepage  <https://marineregions.org/ontology/documentation.html> ;
-  rdfs:label     "The EMO-BON Ontology"@en ;
-  rdfs:comment   "The EMO-BON ontology provides definitions for the classes and properties used in EMO-BON data."@en ;
+  rdfs:label     "The Sampling EMO-BON Ontology"@en ;
+  rdfs:comment   "The Sampling EMO-BON ontology provides definitions for the sampling classes and properties used in EMO-BON data."@en ;
   dc:publisher   <https://www.vliz.be/> ;
   dc:issued      "2023-03-17"^^xsd:date ;
   dc:modified    "2023-07-26"^^xsd:date ;
@@ -41,8 +45,8 @@
         schema:affiliation  <https://www.vliz.be> ;
     ];
   dc:creator <https://www.embrc.eu> ;
-  vann:preferredNamespacePrefix "emobon" ;
-  vann:preferredNamespaceUri    "http://emobon.org/ns/ontology#" .
+  vann:preferredNamespacePrefix "emobon-sampling" ;
+  vann:preferredNamespaceUri    "https://data.emobon.embrc.eu/ns/sampling#" .
 
 <https://www.vliz.be/>
   a schema:Organization ;
@@ -58,410 +62,168 @@
 .
 
 
-### CLASSES ###
-schema:Thing
-  a owl:Class ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty schema:identifier ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange <http://www.w3.org/ns/shacl#IRI> ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty schema:description ;
-    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ] ;
-.
-
-
-emobon:Observatory
-  a owl:Class ;
-  rdfs:subClassOf schema:Thing, [
-    a owl:Restriction ;
-    owl:onProperty emobon:broadBiome ;
-    owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_00000428> ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty emobon:localBiome ;
-    owl:someValuesFrom <http://purl.obolibrary.org/obo/ENVO_00000428> ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty emobon:geoLocation ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onClass <http://www.opengis.net/ont/sf#Point> ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty emobon:sampleType ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onClass emobon:SampleType ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty emobon:marineRegion ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:anyURI ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty emobon:observatoryId ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty emobon:observatorySampleId ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ] ;
-.
-
-<http://purl.obolibrary.org/obo/ENVO_00000428> 
-  a owl:Class ;
-.
-
-
-emobon:SampleType
-  a owl:Class ;
-  owl:equivalentClass [
-    a owl:Class ;
-    owl:oneOf (
-     emobon:Hard
-     emobon:Soil
-     emobon:Water
-   )
-  ] ;
-.
-
-emobon:Hard
-  a owl:NamedIndividual, emobon:SampleType ;
-.
-
-emobon:Soil
-  a owl:NamedIndividual, emobon:SampleType ;
-.
-
-emobon:Water
-  a owl:NamedIndividual, emobon:SampleType ;
-.
-
-schema:Organization
-  a owl:Class ;
-  rdfs:subClassOf schema:Thing, [
-    a owl:Restriction ;
-    owl:onProperty schema:address ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onClass schema:PostalAddress ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty schema:legalName ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ] ;
-.
-
-<http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#Organization>
-  a owl:Class ;
-  rdfs:subClassOf schema:Organization, [
-    a owl:Restriction ;
-    owl:onProperty <http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#edmoId> ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:positiveInteger ;
-  ] ;
-.
-
-schema:PostalAddress
-  a owl:Class ;
-  rdfs:subClassOf schema:ContactPoint, [
-    a owl:Restriction ;
-    owl:onProperty schema:addressCountry ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty schema:postalCode ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty schema:streetAddress ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ] ;
-.
-
-schema:ContactPoint 
-  a owl:Class ;
-.
-
-<http://www.opengis.net/ont/sf#Geometry>
-  a owl:Class ;
-  rdfs:subClassOf [
-    a owl:Restriction ;
-    owl:onProperty geo:asWKT ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange geo:wktLiteral ;
-  ] ;
-.
-
-<http://www.opengis.net/ont/sf#Point>
-  a owl:Class ;
-  rdfs:subClassOf <http://www.opengis.net/ont/sf#Geometry> ;
-.
-
-
-#### CLASSES EXTENDED ####
-emobon:siteInfo
+#### CLASSES Sample ####
+<https://data.emobon.embrc.eu/ns/sampling#siteInfo>
     a owl:Class ; 
-    rdfs:isDefinedBy <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment "Extra information on the sampling site, in particular concerning other data collections from the same area, environmental activities or events, etc." ; 
     rdfs:label "Sampling site information" ; 
     rdfs:subClassOf rdfs:comment ;
 .
 
 
-### PROPERTIES ###
-<http://www.embrc.eu/emobon/EmoBonOntology#hasBiome>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://www.embrc.eu/emobon/EmoBonOntology#Observatory> ;
-  rdfs:range <http://purl.obolibrary.org/obo/ENVO_00000428> ;
-.
-
-<http://www.embrc.eu/emobon/EmoBonOntology#broadBiome>
-  a owl:ObjectProperty ;
-  rdfs:subPropertyOf <http://www.embrc.eu/emobon/EmoBonOntology#hasBiome> ;
-.
-
-<http://www.embrc.eu/emobon/EmoBonOntology#localBiome>
-  a owl:ObjectProperty ;
-  rdfs:subPropertyOf <http://www.embrc.eu/emobon/EmoBonOntology#hasBiome> ;
-.
-
-<http://www.embrc.eu/emobon/EmoBonOntology#geoLocation>
-  a owl:ObjectProperty ;
-  rdfs:range <http://www.opengis.net/ont/sf#Point> ;
-.
-
-<http://www.embrc.eu/emobon/EmoBonOntology#sampleType>
-  a owl:ObjectProperty ;
-  rdfs:range <http://www.embrc.eu/emobon/EmoBonOntology#SampleType> ;
-.
-
-schema:address
-  a owl:ObjectProperty ;
-  rdfs:range schema:PostalAddress ;
-.
-
-
-<http://www.embrc.eu/emobon/EmoBonOntology#marineRegion>
-  a owl:DatatypeProperty ;
-  rdfs:range xsd:anyURI ;
-.
-
-<http://www.embrc.eu/emobon/EmoBonOntology#observatoryId>
-  a owl:DatatypeProperty ;
-  rdfs:domain <http://www.embrc.eu/emobon/EmoBonOntology#Observatory> ;
-  rdfs:range xsd:string ;
-.
-
-<http://www.embrc.eu/emobon/EmoBonOntology#observatorySampleId>
-  a owl:DatatypeProperty ;
-  rdfs:domain <http://www.embrc.eu/emobon/EmoBonOntology#Observatory> ;
-  rdfs:range xsd:string ;
-.
-
-<http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#edmoId>
-  a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain <http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#Organization> ;
-  rdfs:range xsd:positiveInteger ;
-.
-
-schema:legalName
-  a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain schema:Organization ;
-  rdfs:range xsd:string ;
-.
-
-geo:asWKT
-  a owl:DatatypeProperty ;
-  rdfs:domain <http://www.opengis.net/ont/sf#Geometry> ;
-  rdfs:range geo:wktLiteral ;
-.
-
-schema:addressCountry
-  a owl:DatatypeProperty ;
-  rdfs:range xsd:string ;
-.
-
-schema:description
-  a owl:DatatypeProperty ;
-  rdfs:range xsd:string ;
-.
-
-schema:identifier
-  a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:range xsd:anyURI ;
-.
-
-schema:postalCode 
-  a owl:DatatypeProperty 
-.
-
-schema:streetAddress
-  a owl:DatatypeProperty ;
-  rdfs:domain schema:PostalAddress ;
-  rdfs:range xsd:string ;
-.
-
-
-#### PROPERTIES EXTENDED ####
-emobon:linkedToObservatory 
+#### PROPERTIES Sample ####
+<https://data.emobon.embrc.eu/ns/sampling#linkedToObservatory> 
     a                     owl:ObjectProperty ;
-    rdfs:isDefinedBy      <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment          "The observatory that is linked to the sampling event."@en ;
     rdfs:label            "is linked to observatory"@en ;
     rdfs:domain           sosa:Sampling ;
-    rdfs:range            emobon:Observatory ;
+    rdfs:range            emobon-core:Observatory ;
 .
 
-emobon:enaProjAccNum
+<https://data.emobon.embrc.eu/ns/sampling#enaProjAccNum>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "ENA project accession number associated to this observatory."@en ;
     rdfs:label          "has ENA project accession number"@en ;
-    rdfs:domain         schema:project ;
+    rdfs:domain         schema:Project ;
     rdfs:range          xsd:string ;
 .
 
-emobon:enaStudyAccNum
+<https://data.emobon.embrc.eu/ns/sampling#enaStudyAccNum>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "ENA study accession number associated to the observatory."@en ;
     rdfs:label          "has ENA study accession number"@en ;
-    rdfs:domain         emobon:Observatory ;
+    rdfs:domain         emobon-core:Observatory ;
     rdfs:range          xsd:string ;
 .
 
-emobon:enaSampleAccNum
+<https://data.emobon.embrc.eu/ns/sampling#enaSampleAccNum>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "ENA sample accession number associated with the sample."@en ;
-    rdfs:label          "has ENA study accession number"@en ;
+    rdfs:label          "has ENA sample accession number"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ;
 .
 
-emobon:hasMixsPackage
+<https://data.emobon.embrc.eu/ns/sampling#hasMixsPackage>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "The MIxS extension for reporting of measurements and observations obtained from one or more of the environments where a sample was obtained"@en ;
     rdfs:label          "has Mixs Package"@en ;
-    rdfs:domain         emobon:Observatory ;
+    rdfs:domain         emobon-core:Observatory ;
     rdfs:range          xsd:string ;
 .
 
-emobon:marineRegionName
+<https://data.emobon.embrc.eu/ns/sampling#marineRegionName>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "The name of the marine region"@en ;
     rdfs:label          "Name associated with the marine region."@en ;
+    rdfs:domain         emobon-core:Observatory ;
     rdfs:range          xsd:string ;
 .
 
-emobon:waterColumnDepth
+<https://data.emobon.embrc.eu/ns/sampling#waterColumnDepth>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Measument of the total depth of the water column in meters"@en ;
     rdfs:label          "Total depth of water column"@en ;
     rdfs:domain         [
                             a owl:Class ; 
                             owl:unionOf (
                                 sosa:Sampling
-                                emobon:Observatory
+                                emobon-core:Observatory
                             ) ; 
                         ] ;
     rdfs:range          xsd:nonNegativeInteger ;
 .
 
-emobon:originCountry
+<https://data.emobon.embrc.eu/ns/sampling#originCountry>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "The geographical origin of the sample as defined by the country name."@en ;
     rdfs:label          "Country of origin of the sample"@en ;
     rdfs:domain         [
                             a owl:Class ; 
                             owl:unionOf (
                                 sosa:Sampling
-                                emobon:Observatory
+                                emobon-core:Observatory
                             ) ; 
                         ] ;
     rdfs:range          xsd:string ;
 .
 
-emobon:soilType
+<https://data.emobon.embrc.eu/ns/sampling#soilType>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Information about the sediment type of the sample based on major constituents"@en ;
     rdfs:label          "Sediment type of a soil sample"@en ;
-    rdfs:domain         emobon:Observatory;
+    rdfs:domain         emobon-core:Observatory ;
     rdfs:range          xsd:string ;
 .
 
 
-emobon:samplingDepth
+<https://data.emobon.embrc.eu/ns/sampling#samplingDepth>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Measument of the sampling depth of the water column in meters"@en ;
     rdfs:label          "Sampling depth of water column"@en ;
     rdfs:domain         sosa:Sampling;
     rdfs:range          xsd:nonNegativeInteger ;
 .
 
-emobon:sampleDepth
+<https://data.emobon.embrc.eu/ns/sampling#sampleDepth>
     a                   owl:DatatypeProperty ; 
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Measument of the sample depth of the water column in meters"@en ;
     rdfs:label          "Sampling depth of water column"@en ;
     rdfs:domain         sosa:Sample;
     rdfs:range          xsd:nonNegativeInteger ;
 .
 
-emobon:tidalStage
+<https://data.emobon.embrc.eu/ns/sampling#tidalStage>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
-    rdfs:comment        "Tidal stage at the moment of the sampling event, expected values are: low_tide, ebb_tide, flood_tide, high_tide, no_tide"@en ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
+    rdfs:comment        "Tidal stage at the moment of the sampling event, expected values are: low_tide, ebb_tide, flood_tide, high_tide"@en ;
     rdfs:label          "Tidal stage"@en ;
     rdfs:domain         sosa:Sampling;
     rdfs:range          xsd:string ;
 .
 
-emobon:storageTemp
+<https://data.emobon.embrc.eu/ns/sampling#storageTemp>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Temperature at which the sample was stored during a storage activity."@en ;
     rdfs:label          "Storage temperature"@en ;
     rdfs:domain         prov:Activity ;
     rdfs:range          xsd:float ;
 .
 
-emobon:storageLoc
+<https://data.emobon.embrc.eu/ns/sampling#storageLoc>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Location at which the sample was stored during a storage activity."@en ;
     rdfs:label          "Storage location"@en ;
     rdfs:domain         prov:Activity ;
     rdfs:range          xsd:string ;
 .
 
-emobon:longStorage
+<https://data.emobon.embrc.eu/ns/sampling#longStorage>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Indicates if the sample is stored long term."@en ;
     rdfs:label          "Long storage"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:boolean ;
 .
 
-emobon:membrCut
+<https://data.emobon.embrc.eu/ns/sampling#membrCut>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Indicates if the membrane was cut in half after filtration"@en ;
     rdfs:label          "Membrane cut"@en ;
     rdfs:domain         sosa:Sample ;
@@ -469,18 +231,18 @@ emobon:membrCut
 .
 
 ## note on range: most values will be xsd:float, but xsd:string also in data (see term definition) 
-emobon:filtrationTime
+<https://data.emobon.embrc.eu/ns/sampling#filtrationTime>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Indicates how long from sampling until start of filtration, 'fi' indicates filtration was done in the field."@en ;
     rdfs:label          "Filtration time"@en ;
     rdfs:domain         sosa:Sample ;
-    rdfs:range          xsd:string ;    
+    rdfs:range          xsd:string ;
 .
 
-emobon:hasSampleSize
+<https://data.emobon.embrc.eu/ns/sampling#hasSampleSize>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "The size of the collected sample"@en ;
     rdfs:label          "has ENA sample accession number"@en ;
     rdfs:domain         sosa:Sample ;
@@ -488,67 +250,56 @@ emobon:hasSampleSize
 .
 
 #note: if values could be converted to T ~ true|1 and F ~ false|0 then datatype can be xsd:boolean
-emobon:failure 
+<https://data.emobon.embrc.eu/ns/sampling#failure>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Indication of failure in data generation, which may have occured at any stage of the workflow; takes True (T) or False (F) values."@en ;
     rdfs:label          "sample failure"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-emobon:failureComment
+<https://data.emobon.embrc.eu/ns/sampling#failureComment>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Desciption of failure cause"@en ;
     rdfs:label          "sample failure comment"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-#note: not decided on yet
-emobon:sampleReplicate 
+<https://data.emobon.embrc.eu/ns/sampling#sampleReplicate>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Replicate number of the sample or Blank"@en ;
     rdfs:label          "sample replicate"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-emobon:filterSizeRange
+<https://data.emobon.embrc.eu/ns/sampling#filterSizeRange>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "The Range of sieve pore size used to pre-filter/pre-sort and retain the macrobenthos sample."@en ;
     rdfs:label          "filter size range"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ; 
 .
 
-emobon:lowerFilterSize
+<https://data.emobon.embrc.eu/ns/sampling#lowerFilterSize>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
-    rdfs:comment        "Refers to the mesh/pore size used to retain the sample. Materials smaller than the size threshold are excluded from the sample."@en ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
+    rdfs:comment        "The sieve pore size used to pre-filter/pre-sort the macrobenthos sample. Materials larger than the size threshold are excluded from the sample."@en ;
     rdfs:label          "lower filter size"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:float ; 
 .
 
-emobon:upperFilterSize
+<https://data.emobon.embrc.eu/ns/sampling#upperFilterSize>
     a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <http://www.embrc.eu/emobon/EmoBonOntology> ;
-    rdfs:comment        "Refers to the mesh/pore size used to pre-filter/pre-sort the sample. Materials larger than the size threshold are excluded from the sample."@en ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
+    rdfs:comment        "The sieve pore size used to retain the macrobenthos sample. Materials smaller than the size threshold are excluded from the sample"@en ;
     rdfs:label          "upper filter size"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:float ; 
-.
-
-
-### Datatypes ###
-geo:wktLiteral 
-  a rdfs:Datatype ;
-.
-
-<http://www.w3.org/ns/shacl#IRI> 
-  a rdfs:Datatype ;
 .
