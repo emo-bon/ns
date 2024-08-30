@@ -25,28 +25,37 @@
   dct:issued      "2023-03-17"^^xsd:date ;
   dct:modified    "2023-07-26"^^xsd:date ;
   dc:license     <https://creativecommons.org/licenses/by/4.0/> ;
-  dc:contributor                                                       
-    [
+  dc:contributor
+    <henriette:harmse>,
+    <katrina:exter>,
+    <laurian:van:maldeghem>;
+  dc:creator <https://www.embrc.eu> ;
+  vann:preferredNamespacePrefix "emobon-sequence" ;
+  vann:preferredNamespaceUri    "{{baseuri}}/{{name}}#" .
+
+
+<henriette:harmse>
         schema:name         "Henriette Harmse" ;
         schema:identifier   <https://orcid.org/0000-0001-7251-9504> ;
         schema:email        <mailto:henriette007@ebi.ac.uk> ;
         schema:affiliation  <https://www.embrc.eu> ;
-    ],
-    [
-        schema:name         "Katrina Exter" ;
-        schema:identifier   <https://orcid.org/0000-0002-5911-1536> ;
-        schema:email        <mailto:katrina.exter@vliz.be> ;
-        schema:affiliation  <https://www.vliz.be> ;
-    ],
-    [
-        schema:name         "Laurian Van Maldeghem" ;
-        schema:identifier   <https://orcid.org/0000-0003-0663-5907> ;
-        schema:email        <mailto:laurian.van.maldeghem@vliz.be> ;
-        schema:affiliation  <https://www.vliz.be> ;
-    ];
-  dc:creator <https://www.embrc.eu> ;
-  vann:preferredNamespacePrefix "emobon-sequence" ;
-  vann:preferredNamespaceUri    "{{baseuri}}/{{name}}#" .
+.
+
+<katrina:exter>
+  a schema:Person ; 
+  schema:name         "Katrina Exter" ;
+  schema:identifier   <https://orcid.org/0000-0002-5911-1536> ;
+  schema:email        <mailto:katrina.exter@vliz.be> ;
+  schema:affiliation  <https://www.vliz.be> ;
+.
+
+<laurian:van:maldeghem>
+  a schema:Person ;
+  schema:name         "Laurian Van Maldeghem" ;
+  schema:identifier   <https://orcid.org/0000-0003-0663-5907> ;
+  schema:email        <mailto:laurian.van.maldeghem@vliz.be> ;
+  schema:affiliation  <https://www.vliz.be> ;
+.
 
 <https://www.vliz.be/>
   a schema:Organization ;
