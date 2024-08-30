@@ -1,0 +1,10 @@
+"ID","DATE","PREFLABEL_EN","DEFINITION_EN","ALTLABEL_EN","BROADER","NARROWER"
+1,2024-08-30,"METAGENOMIC","metagenomic analysis workflow","metag",,
+2,2024-08-30,"GENOMIC","genomic analysis workflow","gen",,
+3,2024-08-30,"GENOMIC SINGLE CELL","genomic single cell analysis workflow","gensc",,
+4,2024-08-30,"TRANSCRIPTOMIC","transcriptomic analysis workflow","trans",,
+5,2024-08-30,"TRANSCRIPTOMIC SINGLE CELL","transcriptomic single cell analysis workflow","transsc",,
+6,2024-08-30,"METATRANSCRIPTOMIC","metatranscriptomic analysis workflow","metatrans",,
+7,2024-08-30,"SYNTHETIC","synthetic analysis workflow","synt",,
+8,2024-08-30,"VIRAL RNA","viral rna analysis workflow","viral",,
+9,2024-08-30,"OTHER","other type analysis workflow","other",,
