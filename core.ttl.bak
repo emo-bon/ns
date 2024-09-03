@@ -44,11 +44,11 @@
 <https://orcid.org/0000-0002-5911-1536>
   a schema:Person ; 
   schema:name         "Katrina Exter" ;
-  foaf:name         "Katrina Exter" ;
-  foaf:givenName    "Katrina" ;
-  foaf:familyName   "Exter" ;
-  dct:title         "Katrina Exter" ;
-  dc:title         "Katrina Exter" ;
+  foaf:name         "foaf Katrina Exter" ;
+  foaf:givenName    "foaf pt1 Katrina" ;
+  foaf:familyName   "foaf pt2 Exter" ;
+  dct:title         "dct Katrina Exter" ;
+  dc:title         "dc Katrina Exter" ;
   schema:identifier   <https://orcid.org/0000-0002-5911-1536> ;
   schema:email        <mailto:katrina.exter@vliz.be> ;
   schema:affiliation  <https://www.vliz.be> ;
