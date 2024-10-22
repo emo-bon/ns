@@ -190,7 +190,7 @@
     rdfs:comment        "Measument of the sampling depth of the water column in meters"@en ;
     rdfs:label          "Sampling depth of water column"@en ;
     rdfs:domain         sosa:Sampling;
-    rdfs:range          xsd:nonNegativeInteger ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 <{{baseuri}}/{{name}}#maxSamplingDepth>
@@ -199,7 +199,7 @@
     rdfs:comment        "Measument of the maximum sampling depth of the water column in meters"@en ;
     rdfs:label          "Max sampling depth of water column"@en ;
     rdfs:domain         sosa:Sampling;
-    rdfs:range          xsd:nonNegativeInteger ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 
@@ -236,7 +236,7 @@
     rdfs:comment        "Temperature at which the sample was stored during a storage activity."@en ;
     rdfs:label          "Storage temperature"@en ;
     rdfs:domain         prov:Activity ;
-    rdfs:range          xsd:float ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 <{{baseuri}}/{{name}}#storageLoc>
@@ -273,7 +273,7 @@
     rdfs:comment        "Indicates how long from sampling until start of filtration, 'fi' indicates filtration was done in the field."@en ;
     rdfs:label          "Filtration time"@en ;
     rdfs:domain         sosa:Sample ;
-    rdfs:range          xsd:string ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 <{{baseuri}}/{{name}}#hasSampleSize>
@@ -282,7 +282,7 @@
     rdfs:comment        "The size of the collected sample"@en ;
     rdfs:label          "has ENA sample accession number"@en ;
     rdfs:domain         sosa:Sample ;
-    rdfs:range          xsd:string ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 #note: if values could be converted to T ~ true|1 and F ~ false|0 then datatype can be xsd:boolean
@@ -328,7 +328,7 @@
     rdfs:comment        "The sieve pore size used to pre-filter/pre-sort the macrobenthos sample. Materials larger than the size threshold are excluded from the sample."@en ;
     rdfs:label          "lower filter size"@en ;
     rdfs:domain         sosa:Sample ;
-    rdfs:range          xsd:float ; 
+    rdfs:range          qudt:QuantityValue ; 
 .
 
 <{{baseuri}}/{{name}}#upperFilterSize>
@@ -337,5 +337,5 @@
     rdfs:comment        "The sieve pore size used to retain the macrobenthos sample. Materials smaller than the size threshold are excluded from the sample"@en ;
     rdfs:label          "upper filter size"@en ;
     rdfs:domain         sosa:Sample ;
-    rdfs:range          xsd:float ; 
+    rdfs:range          qudt:QuantityValue ; 
 .
