@@ -81,6 +81,15 @@
 
 
 #### PROPERTIES Sample ####
+<{{baseuri}}/{{name}}#origEmobonId
+    a                     owl:DatatypeProperty ;
+    rdfs:isDefinedBy      <{{baseuri}}/{{name}}> ;
+    rdfs:comment          "The original EMOBON assigned identifier as used for the sample material."@en ;
+    rdfs:label            "original EMOBON assigned identifier"@en ;
+    rdfs:domain           sosa:Sampling ;
+    rdfs:range            xsd:string ;
+.
+
 <{{baseuri}}/{{name}}#linkedToObservatory> 
     a                     owl:ObjectProperty ;
     rdfs:isDefinedBy      <{{baseuri}}/{{name}}> ;
