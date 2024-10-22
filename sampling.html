@@ -10,7 +10,7 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://orcid.org/0000-0003-0663-5907",
+    "@id": "https://orcid.org/0000-0002-5911-1536",
     "https://schema.org/affiliation": [
       {
         "@id": "https://www.vliz.be"
@@ -18,17 +18,17 @@
     ],
     "https://schema.org/email": [
       {
-        "@id": "mailto:laurian.van.maldeghem@vliz.be"
+        "@id": "mailto:katrina.exter@vliz.be"
       }
     ],
     "https://schema.org/identifier": [
       {
-        "@id": "https://orcid.org/0000-0003-0663-5907"
+        "@id": "https://orcid.org/0000-0002-5911-1536"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "Laurian Van Maldeghem"
+        "@value": "Katrina Exter"
       }
     ]
   },
@@ -107,16 +107,25 @@
     ]
   },
   {
-    "@id": "https://www.embrc.eu",
-    "https://schema.org/name": [
+    "@id": "https://orcid.org/0000-0003-0663-5907",
+    "https://schema.org/affiliation": [
       {
-        "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
+        "@id": "https://www.vliz.be"
       }
     ],
-    "https://schema.org/url": [
+    "https://schema.org/email": [
       {
-        "@id": "https://www.embrc.eu"
+        "@id": "mailto:laurian.van.maldeghem@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0003-0663-5907"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Laurian Van Maldeghem"
       }
     ]
   },
@@ -139,25 +148,16 @@
     ]
   },
   {
-    "@id": "https://orcid.org/0000-0002-5911-1536",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:katrina.exter@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0002-5911-1536"
-      }
-    ],
+    "@id": "https://www.embrc.eu",
     "https://schema.org/name": [
       {
-        "@value": "Katrina Exter"
+        "@language": "en",
+        "@value": "European Marine Biological Resource Centre"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.embrc.eu"
       }
     ]
   }
@@ -683,12 +683,12 @@
 </th>
 <td>
 <span>
-<a href="https://data.emobon.embrc.eu/ns/core#Observatory">emobon-core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="https://data.emobon.embrc.eu/ns/core#Observatory">emobon-core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -698,7 +698,7 @@
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
 </th>
 <td>
-<a href="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">xsd:nonNegativeInteger</a>
+<a href="http://qudt.org/schema/qudt/QuantityValue">qudt:QuantityValue</a>
 </td>
 </tr>
 </table>
@@ -734,12 +734,12 @@
 </th>
 <td>
 <span>
-<a href="https://data.emobon.embrc.eu/ns/core#Observatory">emobon-core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="https://data.emobon.embrc.eu/ns/core#Observatory">emobon-core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1566,6 +1566,10 @@
 <dd>
 <code>http://www.w3.org/ns/prov#</code>
 </dd>
+<dt id="qudt">qudt</dt>
+<dd>
+<code>http://qudt.org/schema/qudt/</code>
+</dd>
 <dt id="rdf">rdf</dt>
 <dd>
 <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
@@ -1764,6 +1768,9 @@
 </li>
 <li>
 <a href="#prov">prov</a>
+</li>
+<li>
+<a href="#qudt">qudt</a>
 </li>
 <li>
 <a href="#rdf">rdf</a>

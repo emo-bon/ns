@@ -156,7 +156,7 @@
                                 emobon-core:Observatory
                             ) ; 
                         ] ;
-    rdfs:range          xsd:nonNegativeInteger ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 <https://data.emobon.embrc.eu/ns/sampling#originCountry>
