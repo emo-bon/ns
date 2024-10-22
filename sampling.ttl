@@ -88,6 +88,7 @@
     rdfs:label            "original EMOBON assigned identifier"@en ;
     rdfs:domain           sosa:Sampling ;
     rdfs:range            xsd:string ;
+.
 
 <{{baseuri}}/{{name}}#linkedToObservatory> 
     a                     owl:ObjectProperty ;
