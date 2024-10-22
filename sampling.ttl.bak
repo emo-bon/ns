@@ -209,7 +209,7 @@
     rdfs:comment        "Measument of the minimum sample depth of the water column in meters"@en ;
     rdfs:label          "Min sampling depth of water column"@en ;
     rdfs:domain         sosa:Sample;
-    rdfs:range          xsd:nonNegativeInteger ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 <{{baseuri}}/{{name}}#maxSampleDepth>
@@ -218,7 +218,7 @@
     rdfs:comment        "Measument of the maximum sample depth of the water column in meters"@en ;
     rdfs:label          "Max sampling depth of water column"@en ;
     rdfs:domain         sosa:Sample;
-    rdfs:range          xsd:nonNegativeInteger ;
+    rdfs:range          qudt:QuantityValue ;
 .
 
 <{{baseuri}}/{{name}}#tidalStage>
