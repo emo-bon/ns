@@ -319,7 +319,29 @@ geo:wktLiteral
 
 <http://www.w3.org/ns/shacl#IRI> 
   a rdfs:Datatype ;
-.
+.PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/core#1>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          "1" ;
+        skos:prefLabel         "Hard"@en ;
+        skos:definition        "Hard sample type"@en ;
+        skos:altLabel          "hard"
+        .
+
+<https://data.emobon.embrc.eu/ns/core#2>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          "2" ;
+        skos:prefLabel         "Soil"@en ;
+        skos:definition        "Soil sample type"@en ;
+        skos:altLabel          "soil"
+        .
+
 <https://data.emobon.embrc.eu/ns/core#3>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
