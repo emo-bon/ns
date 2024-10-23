@@ -1,13 +1,10 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>sequence vocabulary</title>
-    <link
-      href="https://data.emobon.embrc.eu/ns/sequence.ttl"
-      rel="describedby"
-      type="text/turtle"
-    />
-    <style>
+<head>
+<title>sequence vocabulary</title>
+<link href="https://data.emobon.embrc.eu/ns/sequence.ttl" rel="describedby" type="text/turtle"/>
+<style>
       #pylode {
           position: fixed;
           top: 170px;
@@ -277,754 +274,508 @@
           word-wrap: break-word;
         }
     </style>
-    <link
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC"
-      rel="icon"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg=="
-      rel="icon"
-      sizes="32x32"
-      type="image/png"
-    />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-  </head>
-  <body>
-    <div id="content">
-      <div class="section" id="concepts">
-        <h2>Concepts</h2>
-        
-        <div class="concept entity" id="1">
-          <h3>
+<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png"/>
+<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+<body>
+<div id="content">
+<div class="section" id="concepts">
+<h2>Concepts</h2>
+<div class="concept entity" id="metagenomic">
+<h3>
             METAGENOMIC
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#1</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>metagenomic analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>metag</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="2">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#metagenomic</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>metagenomic analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>metag</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="genomic">
+<h3>
             GENOMIC
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#2</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>genomic analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>gen</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="3">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#genomic</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>genomic analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>gen</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="genomicSingleCell">
+<h3>
             GENOMIC SINGLE CELL
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#3</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>genomic single cell analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>gensc</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="4">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#genomicSingleCell</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>genomic single cell analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>gensc</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="transcriptomic">
+<h3>
             TRANSCRIPTOMIC
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#4</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>transcriptomic analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>trans</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="5">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#transcriptomic</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>transcriptomic analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>trans</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="transcriptomicSingleCell">
+<h3>
             TRANSCRIPTOMIC SINGLE CELL
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#5</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>transcriptomic single cell analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>transsc</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="6">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#transcriptomicSingleCell</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>transcriptomic single cell analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>transsc</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="metatranscriptomic">
+<h3>
             METATRANSCRIPTOMIC
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#6</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>metatranscriptomic analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>metatrans</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="7">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#metatranscriptomic</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>metatranscriptomic analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>metatrans</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="synthetic">
+<h3>
             SYNTHETIC
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#7</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>synthetic analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>synt</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="8">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#synthetic</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>synthetic analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>synt</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="viralRna">
+<h3>
             VIRAL RNA
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#8</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>viral rna analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>viral</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="9">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#viralRna</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>viral rna analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>viral</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="other">
+<h3>
             OTHER
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#9</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>other type analysis workflow</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>other</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="1">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#other</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>other type analysis workflow</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>other</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="manual">
+<h3>
             manual
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#1</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>batch status is manual</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>manual</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="2">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#manual</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>batch status is manual</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>manual</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="test">
+<h3>
             test
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#2</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>batch is being tested</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>test</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="3">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#test</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>batch is being tested</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>test</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="processing">
+<h3>
             processing
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#3</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>batch is being processed</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>processing</p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-        <div class="concept entity" id="4">
-          <h3>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#processing</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>batch is being processed</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>processing</p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+<div class="concept entity" id="done">
+<h3>
             done
             <sup class="sup-op" title="SKOS concept">cc</sup>
-          </h3>
-          <table>
-            <tr>
-              <th>IRI</th>
-              <td>
-                <code
-                  >https://data.emobon.embrc.eu/ns/sequence_vocab#4</code
-                >
-              </td>
-            </tr>
-            
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://purl.org/dc/terms/description"
-                  title="An account of the resource. Defined in DCMI Metadata Terms"
-                  >Description</a
-                >
-              </th>
-              <td><p>batch status is done</p></td>
-            </tr>
-             
-            <tr>
-              <th>
-                <a
-                  class="hover_property"
-                  href="http://www.w3.org/2004/02/skos/core#altLabel"
-                  title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)"
-                  >Alternative Label</a
-                >
-              </th>
-              <td><p>done </p></td>
-            </tr>
-
-            <tr>
-                
-          </table>
-        </div>
-        
-      </div>
-      <div id="namespaces">
-        <h2>Namespaces</h2>
-        <dl>
-          <dt id="dcterms">dcterms</dt>
-          <dd>
-            <code>http://purl.org/dc/terms/</code>
-          </dd>
-          <dt id="rdf">rdf</dt>
-          <dd>
-            <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
-          </dd>
-          <dt id="rdfs">rdfs</dt>
-          <dd>
-            <code>http://www.w3.org/2000/01/rdf-schema#</code>
-          </dd>
-          <dt id="skos">skos</dt>
-          <dd>
-            <code>http://www.w3.org/2004/02/skos/core#</code>
-          </dd>
-          <dt id="vann">vann</dt>
-          <dd>
-            <code>http://purl.org/vocab/vann/</code>
-          </dd>
-        </dl>
-      </div>
-      <div id="legend">
-        <h2>Legend</h2>
-        <table class="entity">
-          <tr id="CC">
-            <td>
-              <sup class="sup-op" title="SKOS concept">CC</sup>
-            </td>
-            <td>Concept</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div id="pylode">
-      <p>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence_vocab#done</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>batch status is done</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2004/02/skos/core#altLabel" title="A synonym or alternative label for the subject resource. Defined in Simple Knowledge Organization System (SKOS)">Alternative Label</a>
+</th>
+<td><p>done </p></td>
+</tr>
+<tr>
+</tr></table>
+</div>
+</div>
+<div id="namespaces">
+<h2>Namespaces</h2>
+<dl>
+<dt id="dcterms">dcterms</dt>
+<dd>
+<code>http://purl.org/dc/terms/</code>
+</dd>
+<dt id="rdf">rdf</dt>
+<dd>
+<code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+</dd>
+<dt id="rdfs">rdfs</dt>
+<dd>
+<code>http://www.w3.org/2000/01/rdf-schema#</code>
+</dd>
+<dt id="skos">skos</dt>
+<dd>
+<code>http://www.w3.org/2004/02/skos/core#</code>
+</dd>
+<dt id="vann">vann</dt>
+<dd>
+<code>http://purl.org/vocab/vann/</code>
+</dd>
+</dl>
+</div>
+<div id="legend">
+<h2>Legend</h2>
+<table class="entity">
+<tr id="CC">
+<td>
+<sup class="sup-op" title="SKOS concept">CC</sup>
+</td>
+<td>Concept</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="pylode">
+<p>
         made by
         <a href="https://github.com/vliz-be-opsci/pylode-to-pages">
-          <span id="p">Pylode</span>
-          <span id="y">-To-Pages</span>
-          <span>@VLIZ</span>
-        </a>
-      </p>
-    </div>
-    <div id="toc">
-      <h3>Table of Contents</h3>
-      <ul class="first">
-        <li>
-          <h4>
-            <a href="#concepts">Concepts</a>
-          </h4>
-          <ul class="second">
-            
-            <li>
-              <a href="#1">METAGENOMIC</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#2">GENOMIC</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#3">GENOMIC SINGLE CELL</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#4">TRANSCRIPTOMIC</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#5">TRANSCRIPTOMIC SINGLE CELL</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#6">METATRANSCRIPTOMIC</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#7">SYNTHETIC</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#8">VIRAL RNA</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#9">OTHER</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#1">manual</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#2">test</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#3">processing</a>
-            </li>
-
-            <li>
-            <li>
-              <a href="#4">done</a>
-            </li>
-
-            <li></li>
-          </ul>
-        </li>
-        <li>
-          <h4>
-            <a href="#namespaces">Namespaces</a>
-          </h4>
-          <ul class="second">
-            <li>
-              <a href="#dcterms">dcterms</a>
-            </li>
-            <li>
-              <a href="#rdf">rdf</a>
-            </li>
-            <li>
-              <a href="#rdfs">rdfs</a>
-            </li>
-            <li>
-              <a href="#skos">skos</a>
-            </li>
-            <li>
-              <a href="#vann">vann</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h4>
-            <a href="#legend">Legend</a>
-          </h4>
-          <ul class="second">
-            <li>
-              <a href="#CC">Concept</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </body>
+<span id="p">Pylode</span>
+<span id="y">-To-Pages</span>
+<span>@VLIZ</span>
+</a>
+</p>
+</div>
+<div id="toc">
+<h3>Table of Contents</h3>
+<ul class="first">
+<li>
+<h4>
+<a href="#concepts">Concepts</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#metagenomic">METAGENOMIC</a>
+</li>
+<li>
+<li>
+<a href="#genomic">GENOMIC</a>
+</li>
+<li>
+<li>
+<a href="#genomicSingleCell">GENOMIC SINGLE CELL</a>
+</li>
+<li>
+<li>
+<a href="#transcriptomic">TRANSCRIPTOMIC</a>
+</li>
+<li>
+<li>
+<a href="#transcriptomicSingleCell">TRANSCRIPTOMIC SINGLE CELL</a>
+</li>
+<li>
+<li>
+<a href="#metatranscriptomic">METATRANSCRIPTOMIC</a>
+</li>
+<li>
+<li>
+<a href="#synthetic">SYNTHETIC</a>
+</li>
+<li>
+<li>
+<a href="#viralRna">VIRAL RNA</a>
+</li>
+<li>
+<li>
+<a href="#other">OTHER</a>
+</li>
+<li>
+<li>
+<a href="#manual">manual</a>
+</li>
+<li>
+<li>
+<a href="#test">test</a>
+</li>
+<li>
+<li>
+<a href="#processing">processing</a>
+</li>
+<li>
+<li>
+<a href="#done">done</a>
+</li>
+<li></li>
+</li></li></li></li></li></li></li></li></li></li></li></li></ul>
+</li>
+<li>
+<h4>
+<a href="#namespaces">Namespaces</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#dcterms">dcterms</a>
+</li>
+<li>
+<a href="#rdf">rdf</a>
+</li>
+<li>
+<a href="#rdfs">rdfs</a>
+</li>
+<li>
+<a href="#skos">skos</a>
+</li>
+<li>
+<a href="#vann">vann</a>
+</li>
+</ul>
+</li>
+<li>
+<h4>
+<a href="#legend">Legend</a>
+</h4>
+<ul class="second">
+<li>
+<a href="#CC">Concept</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</body>
 </html>

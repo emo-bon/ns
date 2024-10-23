@@ -324,28 +324,28 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 
-<https://data.emobon.embrc.eu/ns/core#1>
+<https://data.emobon.embrc.eu/ns/core#hard>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
-        dc:identifier          "1" ;
+        dc:identifier          "Hard" ;
         skos:prefLabel         "Hard"@en ;
         skos:definition        "Hard sample type"@en ;
         skos:altLabel          "hard"
         .
 
-<https://data.emobon.embrc.eu/ns/core#2>
+<https://data.emobon.embrc.eu/ns/core#soil>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
-        dc:identifier          "2" ;
+        dc:identifier          "Soil" ;
         skos:prefLabel         "Soil"@en ;
         skos:definition        "Soil sample type"@en ;
         skos:altLabel          "soil"
         .
 
-<https://data.emobon.embrc.eu/ns/core#3>
+<https://data.emobon.embrc.eu/ns/core#water>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
-        dc:identifier          "3" ;
+        dc:identifier          "Water" ;
         skos:prefLabel         "Water"@en ;
         skos:definition        "Water sample type"@en ;
         skos:altLabel          "water"
