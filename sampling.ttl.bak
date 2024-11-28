@@ -128,6 +128,36 @@
     rdfs:range          xsd:string ;
 .
 
+<{{baseuri}}/{{name}}#taxonomicID>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "Taxonomy ID of the organism as in the NCBI Taxonomy database. "@en ;
+    rdfs:label          "NCBI Taxonomic identifier"@en ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                sosa:Sample
+                            ) ; 
+                        ] ;
+    rdfs:range          xsd:string ;
+.
+
+<{{baseuri}}/{{name}}#bioCommunity>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "Brief description of the biological community being sampled. "@en ;
+    rdfs:label          "Biological community"@en ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                sosa:Sample
+                            ) ; 
+                        ] ;
+    rdfs:range          xsd:string ;
+.
+
 <{{baseuri}}/{{name}}#minSamplingDepth>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;

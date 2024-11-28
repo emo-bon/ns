@@ -10,6 +10,47 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
+    "@id": "https://orcid.org/0000-0002-5911-1536",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.vliz.be"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:katrina.exter@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0002-5911-1536"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Katrina Exter"
+      }
+    ]
+  },
+  {
     "@id": "https://orcid.org/0000-0001-7251-9504",
     "https://schema.org/affiliation": [
       {
@@ -29,20 +70,6 @@
     "https://schema.org/name": [
       {
         "@value": "Henriette Harmse"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.embrc.eu",
-    "https://schema.org/name": [
-      {
-        "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.embrc.eu"
       }
     ]
   },
@@ -70,20 +97,16 @@
     ]
   },
   {
-    "@id": "https://www.vliz.be/",
+    "@id": "https://www.embrc.eu",
     "https://schema.org/name": [
       {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
         "@language": "en",
-        "@value": "Flanders Marine Institute"
+        "@value": "European Marine Biological Resource Centre"
       }
     ],
     "https://schema.org/url": [
       {
-        "@id": "https://www.vliz.be/"
+        "@id": "https://www.embrc.eu"
       }
     ]
   },
@@ -135,29 +158,6 @@
     "https://schema.org/publisher": [
       {
         "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0002-5911-1536",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:katrina.exter@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0002-5911-1536"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Katrina Exter"
       }
     ]
   }
@@ -1411,12 +1411,12 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">emobon-core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1462,12 +1462,12 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">emobon-core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
