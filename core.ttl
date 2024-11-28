@@ -333,6 +333,15 @@ schema:address
     rdfs:range          xsd:string ;
 .
 
+<{{baseuri}}/{{name}}#soilType>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "Information about the sediment type of the sample, collected at an Observatory, based on major constituents"@en ;
+    rdfs:label          "Sediment type of a soil sample"@en ;
+    rdfs:domain         <{{baseuri}}/{{name}}#Observatory> ;
+    rdfs:range          xsd:string ;
+.
+
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain schema:Organization ;
