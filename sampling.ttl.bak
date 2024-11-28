@@ -135,21 +135,6 @@
     rdfs:range          xsd:string ;
 .
 
-<{{baseuri}}/{{name}}#originCountry>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        "The geographical origin of the sample as defined by the country name."@en ;
-    rdfs:label          "Country of origin of the sample"@en ;
-    rdfs:domain         [
-                            a owl:Class ; 
-                            owl:unionOf (
-                                sosa:Sampling
-                                emobon-core:Observatory
-                            ) ; 
-                        ] ;
-    rdfs:range          xsd:string ;
-.
-
 <{{baseuri}}/{{name}}#soilType>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;

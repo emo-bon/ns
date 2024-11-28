@@ -300,6 +300,21 @@ schema:address
     rdfs:range          qudt:QuantityValue ;
 .
 
+<https://data.emobon.embrc.eu/ns/core#originCountry>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
+    rdfs:comment        "The geographical origin of the observatory/sample as defined by the country name."@en ;
+    rdfs:label          "Country of origin of the sample"@en ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                <https://data.emobon.embrc.eu/ns/core#Observatory>
+                            ) ; 
+                        ] ;
+    rdfs:range          xsd:string ;
+.
+
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain schema:Organization ;
