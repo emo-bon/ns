@@ -345,9 +345,18 @@ schema:address
 <https://data.emobon.embrc.eu/ns/core#enaProjAccNum>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
-    rdfs:comment        "ENA project accession number associated to this observatory."@en ;
+    rdfs:comment        "ENA project accession number associated to this project."@en ;
     rdfs:label          "has ENA project accession number"@en ;
     rdfs:domain         schema:Project ;
+    rdfs:range          xsd:string ;
+.
+
+<https://data.emobon.embrc.eu/ns/core#enaStudyAccNum>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
+    rdfs:comment        "ENA study accession number associated to this observatory."@en ;
+    rdfs:label          "has ENA study accession number"@en ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> ;
     rdfs:range          xsd:string ;
 .
 
