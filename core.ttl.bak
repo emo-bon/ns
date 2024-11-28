@@ -253,8 +253,18 @@ schema:address
 
 
 <{{baseuri}}/{{name}}#marineRegion>
-  a owl:DatatypeProperty ;
-  rdfs:range xsd:anyURI ;
+  a                   owl:DatatypeProperty ;
+  rdfs:domain         <{{baseuri}}/{{name}}#Observatory> , sosa:Sampling ;
+  rdfs:range          xsd:anyURI ;
+.
+
+<{{baseuri}}/{{name}}#marineRegionName>
+  a                   owl:DatatypeProperty ;
+  rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+  rdfs:comment        "The name of the marine region"@en ;
+  rdfs:label          "Name associated with the marine region."@en ;
+  rdfs:domain         <{{baseuri}}/{{name}}#Observatory> , sosa:Sampling ;
+  rdfs:range          xsd:string ;
 .
 
 <{{baseuri}}/{{name}}#observatoryId>

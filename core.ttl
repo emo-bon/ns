@@ -253,8 +253,18 @@ schema:address
 
 
 <https://data.emobon.embrc.eu/ns/core#marineRegion>
-  a owl:DatatypeProperty ;
-  rdfs:range xsd:anyURI ;
+  a                   owl:DatatypeProperty ;
+  rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> , sosa:Sampling ;
+  rdfs:range          xsd:anyURI ;
+.
+
+<https://data.emobon.embrc.eu/ns/core#marineRegionName>
+  a                   owl:DatatypeProperty ;
+  rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
+  rdfs:comment        "The name of the marine region"@en ;
+  rdfs:label          "Name associated with the marine region."@en ;
+  rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> , sosa:Sampling ;
+  rdfs:range          xsd:string ;
 .
 
 <https://data.emobon.embrc.eu/ns/core#observatoryId>

@@ -135,15 +135,6 @@
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/ns/sampling#marineRegionName>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "The name of the marine region"@en ;
-    rdfs:label          "Name associated with the marine region."@en ;
-    rdfs:domain         emobon-core:Observatory ;
-    rdfs:range          xsd:string ;
-.
-
 <https://data.emobon.embrc.eu/ns/sampling#waterColumnDepth>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;

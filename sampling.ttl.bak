@@ -135,15 +135,6 @@
     rdfs:range          xsd:string ;
 .
 
-<{{baseuri}}/{{name}}#marineRegionName>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        "The name of the marine region"@en ;
-    rdfs:label          "Name associated with the marine region."@en ;
-    rdfs:domain         emobon-core:Observatory ;
-    rdfs:range          xsd:string ;
-.
-
 <{{baseuri}}/{{name}}#waterColumnDepth>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
