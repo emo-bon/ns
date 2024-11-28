@@ -10,6 +10,29 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
+    "@id": "https://orcid.org/0000-0001-7251-9504",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.embrc.eu"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:henriette007@ebi.ac.uk"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0001-7251-9504"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Henriette Harmse"
+      }
+    ]
+  },
+  {
     "@id": "https://www.embrc.eu",
     "https://schema.org/name": [
       {
@@ -43,6 +66,24 @@
     "https://schema.org/name": [
       {
         "@value": "Laurian Van Maldeghem"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
       }
     ]
   },
@@ -92,47 +133,6 @@
       }
     ],
     "https://schema.org/publisher": [
-      {
-        "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0001-7251-9504",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.embrc.eu"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:henriette007@ebi.ac.uk"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0001-7251-9504"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Henriette Harmse"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
-      {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
       {
         "@id": "https://www.vliz.be/"
       }
@@ -348,6 +348,9 @@
 </div>
 </dl>
 </div>
+<div class="section" id="classes">
+<h2>Classes</h2>
+</div>
 <div class="section" id="objectproperties">
 <h2>Object Properties</h2>
 <div class="property entity" id="linkedToObservatory">
@@ -469,14 +472,15 @@
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
 </th>
 <td>
-<ul>
-<li>
+<span>
 <a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
-</li>
-<li>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+<span class="cardinality">or</span>
+<span>
 <a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
-</li>
-</ul>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
 </td>
 </tr>
 <tr>
@@ -519,14 +523,15 @@
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
 </th>
 <td>
-<ul>
-<li>
+<span>
 <a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
-</li>
-<li>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+<span class="cardinality">or</span>
+<span>
 <a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
-</li>
-</ul>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
 </td>
 </tr>
 <tr>

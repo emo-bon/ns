@@ -103,7 +103,13 @@
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "The physical material being collected"@en ;
     rdfs:label          "Environment material"@en ;
-    rdfs:domain         sosa:Sampling , sosa:Sample ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                sosa:Sample
+                            ) ; 
+                        ] ;
     rdfs:range          xsd:string ;
 .
 
@@ -112,7 +118,13 @@
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Describes what is intended to be done with the Environment material, i.e. the type of organisms to be investigated in that material"@en ;
     rdfs:label          "Investigation type"@en ;
-    rdfs:domain         sosa:Sampling , sosa:Sample ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                sosa:Sample
+                            ) ; 
+                        ] ;
     rdfs:range          xsd:string ;
 .
 
