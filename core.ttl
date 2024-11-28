@@ -285,6 +285,21 @@ schema:address
   rdfs:range xsd:positiveInteger ;
 .
 
+<https://data.emobon.embrc.eu/ns/core#waterColumnDepth>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
+    rdfs:comment        "Measument of the total depth of the water column in meters"@en ;
+    rdfs:label          "Total depth of water column"@en ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                <https://data.emobon.embrc.eu/ns/core#Observatory>
+                            ) ; 
+                        ] ;
+    rdfs:range          qudt:QuantityValue ;
+.
+
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain schema:Organization ;

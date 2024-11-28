@@ -135,21 +135,6 @@
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/ns/sampling#waterColumnDepth>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "Measument of the total depth of the water column in meters"@en ;
-    rdfs:label          "Total depth of water column"@en ;
-    rdfs:domain         [
-                            a owl:Class ; 
-                            owl:unionOf (
-                                sosa:Sampling
-                                emobon-core:Observatory
-                            ) ; 
-                        ] ;
-    rdfs:range          qudt:QuantityValue ;
-.
-
 <https://data.emobon.embrc.eu/ns/sampling#originCountry>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;

@@ -10,25 +10,20 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://orcid.org/0000-0002-5911-1536",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:katrina.exter@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0002-5911-1536"
-      }
-    ],
+    "@id": "https://www.vliz.be/",
     "https://schema.org/name": [
       {
-        "@value": "Katrina Exter"
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
       }
     ]
   },
@@ -84,16 +79,25 @@
     ]
   },
   {
-    "@id": "https://www.embrc.eu",
-    "https://schema.org/name": [
+    "@id": "https://orcid.org/0000-0002-5911-1536",
+    "https://schema.org/affiliation": [
       {
-        "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
+        "@id": "https://www.vliz.be"
       }
     ],
-    "https://schema.org/url": [
+    "https://schema.org/email": [
       {
-        "@id": "https://www.embrc.eu"
+        "@id": "mailto:katrina.exter@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0002-5911-1536"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Katrina Exter"
       }
     ]
   },
@@ -121,20 +125,16 @@
     ]
   },
   {
-    "@id": "https://www.vliz.be/",
+    "@id": "https://www.embrc.eu",
     "https://schema.org/name": [
       {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
         "@language": "en",
-        "@value": "Flanders Marine Institute"
+        "@value": "European Marine Biological Resource Centre"
       }
     ],
     "https://schema.org/url": [
       {
-        "@id": "https://www.vliz.be/"
+        "@id": "https://www.embrc.eu"
       }
     ]
   },
@@ -1356,6 +1356,57 @@
 </tr>
 </table>
 </div>
+<div class="property entity" id="waterColumnDepth">
+<h3>Total depth of water column
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/core#waterColumnDepth</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://data.emobon.embrc.eu/ns/core">The Core EMO-BON Ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Measument of the total depth of the water column in meters</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+<span class="cardinality">or</span>
+<span>
+<a href="#Observatory">emobon-core:Observatory</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="http://qudt.org/schema/qudt/QuantityValue">qudt:QuantityValue</a>
+</td>
+</tr>
+</table>
+</div>
 <div class="property entity" id="legalName">
 <h3>legal name
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
@@ -1645,6 +1696,10 @@
 <dd>
 <code>http://www.w3.org/ns/prov#</code>
 </dd>
+<dt id="qudt">qudt</dt>
+<dd>
+<code>http://qudt.org/schema/qudt/</code>
+</dd>
 <dt id="rdf">rdf</dt>
 <dd>
 <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
@@ -1805,6 +1860,9 @@
 <a href="#edmoId">edmo id</a>
 </li>
 <li>
+<a href="#waterColumnDepth">Total depth of water column</a>
+</li>
+<li>
 <a href="#legalName">legal name</a>
 </li>
 <li>
@@ -1868,6 +1926,9 @@
 </li>
 <li>
 <a href="#prov">prov</a>
+</li>
+<li>
+<a href="#qudt">qudt</a>
 </li>
 <li>
 <a href="#rdf">rdf</a>
