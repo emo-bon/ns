@@ -222,6 +222,7 @@
     rdfs:range          xsd:string ;
 .
 
+#note: values to be converted to 1 and 0 hence datatype xsd:boolean
 <{{baseuri}}/{{name}}#longStorage>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
@@ -231,6 +232,7 @@
     rdfs:range          xsd:boolean ;
 .
 
+#note: values to be converted to 1 and 0 hence datatype xsd:boolean
 <{{baseuri}}/{{name}}#membrCut>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
