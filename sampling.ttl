@@ -70,16 +70,6 @@
 .
 
 
-#### CLASSES Sample ####
-<{{baseuri}}/{{name}}#siteInfo>
-    a owl:Class ; 
-    rdfs:isDefinedBy <{{baseuri}}/{{name}}> ;
-    rdfs:comment "Extra information on the sampling site, in particular concerning other data collections from the same area, environmental activities or events, etc." ; 
-    rdfs:label "Sampling site information" ; 
-    rdfs:subClassOf rdfs:comment ;
-.
-
-
 #### PROPERTIES Sample ####
 <{{baseuri}}/{{name}}#origEmobonId
     a                     owl:DatatypeProperty ;

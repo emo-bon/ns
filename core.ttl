@@ -315,6 +315,16 @@ schema:address
     rdfs:range          xsd:string ;
 .
 
+<{{baseuri}}/{{name}}#siteInfo>
+  a                     owl:DatatypeProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}> ;
+  rdfs:comment          "Extra information on the sampling site of the observatory, in particular concerning other data collections from the same area, environmental activities or events, etc." ; 
+  rdfs:label            "Sampling site information" ; 
+  rdfs:domain           <{{baseuri}}/{{name}}#Observatory> ;
+  rdfs:range            xsd:string ;
+.
+
+
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain schema:Organization ;
