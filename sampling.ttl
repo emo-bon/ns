@@ -222,6 +222,7 @@
     rdfs:range          xsd:string ;
 .
 
+#note: values to be converted to 1 and 0 hence datatype xsd:boolean
 <https://data.emobon.embrc.eu/ns/sampling#longStorage>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
@@ -231,6 +232,7 @@
     rdfs:range          xsd:boolean ;
 .
 
+#note: values to be converted to 1 and 0 hence datatype xsd:boolean
 <https://data.emobon.embrc.eu/ns/sampling#membrCut>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
