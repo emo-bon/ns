@@ -300,6 +300,21 @@ schema:address
     rdfs:range          qudt:QuantityValue ;
 .
 
+<{{baseuri}}/{{name}}#originCountry>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "The geographical origin of the observatory/sample as defined by the country name."@en ;
+    rdfs:label          "Country of origin of the sample"@en ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                <{{baseuri}}/{{name}}#Observatory>
+                            ) ; 
+                        ] ;
+    rdfs:range          xsd:string ;
+.
+
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain schema:Organization ;
