@@ -333,6 +333,15 @@ schema:address
     rdfs:range          xsd:string ;
 .
 
+<https://data.emobon.embrc.eu/ns/core#soilType>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
+    rdfs:comment        "Information about the sediment type of the sample, collected at an Observatory, based on major constituents"@en ;
+    rdfs:label          "Sediment type of a soil sample"@en ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> ;
+    rdfs:range          xsd:string ;
+.
+
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain schema:Organization ;

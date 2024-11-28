@@ -116,15 +116,6 @@
     rdfs:range          xsd:string ;
 .
 
-<{{baseuri}}/{{name}}#soilType>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        "Information about the sediment type of the sample based on major constituents"@en ;
-    rdfs:label          "Sediment type of a soil sample"@en ;
-    rdfs:domain         emobon-core:Observatory ;
-    rdfs:range          xsd:string ;
-.
-
 <{{baseuri}}/{{name}}#environmentMaterial>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;

@@ -116,15 +116,6 @@
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/ns/sampling#soilType>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "Information about the sediment type of the sample based on major constituents"@en ;
-    rdfs:label          "Sediment type of a soil sample"@en ;
-    rdfs:domain         emobon-core:Observatory ;
-    rdfs:range          xsd:string ;
-.
-
 <https://data.emobon.embrc.eu/ns/sampling#environmentMaterial>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
