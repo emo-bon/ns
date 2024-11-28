@@ -116,15 +116,6 @@
     rdfs:range          xsd:string ;
 .
 
-<https://data.emobon.embrc.eu/ns/sampling#hasMixsPackage>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "The MIxS extension for reporting of measurements and observations obtained from one or more of the environments where a sample was obtained"@en ;
-    rdfs:label          "has Mixs Package"@en ;
-    rdfs:domain         emobon-core:Observatory ;
-    rdfs:range          xsd:string ;
-.
-
 <https://data.emobon.embrc.eu/ns/sampling#soilType>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;

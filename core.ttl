@@ -324,6 +324,14 @@ schema:address
   rdfs:range            xsd:string ;
 .
 
+<https://data.emobon.embrc.eu/ns/core#hasMixsPackage>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/core> ;
+    rdfs:comment        "The MIxS extension for reporting of measurements and observations obtained from one or more of the observatory environments where a sample was obtained"@en ;
+    rdfs:label          "has Mixs Package"@en ;
+    rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> ;
+    rdfs:range          xsd:string ;
+.
 
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
