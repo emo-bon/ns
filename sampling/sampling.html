@@ -10,20 +10,39 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://www.vliz.be/",
+    "@id": "https://orcid.org/0000-0003-0663-5907",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.vliz.be"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:laurian.van.maldeghem@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0003-0663-5907"
+      }
+    ],
     "https://schema.org/name": [
       {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
+        "@value": "Laurian Van Maldeghem"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.embrc.eu",
+    "https://schema.org/name": [
       {
         "@language": "en",
-        "@value": "Flanders Marine Institute"
+        "@value": "European Marine Biological Resource Centre"
       }
     ],
     "https://schema.org/url": [
       {
-        "@id": "https://www.vliz.be/"
+        "@id": "https://www.embrc.eu"
       }
     ]
   },
@@ -79,29 +98,6 @@
     ]
   },
   {
-    "@id": "https://orcid.org/0000-0003-0663-5907",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:laurian.van.maldeghem@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0003-0663-5907"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Laurian Van Maldeghem"
-      }
-    ]
-  },
-  {
     "@id": "https://orcid.org/0000-0001-7251-9504",
     "https://schema.org/affiliation": [
       {
@@ -148,16 +144,20 @@
     ]
   },
   {
-    "@id": "https://www.embrc.eu",
+    "@id": "https://www.vliz.be/",
     "https://schema.org/name": [
       {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
         "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
+        "@value": "Flanders Marine Institute"
       }
     ],
     "https://schema.org/url": [
       {
-        "@id": "https://www.embrc.eu"
+        "@id": "https://www.vliz.be/"
       }
     ]
   }
@@ -785,6 +785,106 @@
 </th>
 <td>
 <a href="https://data.emobon.embrc.eu/ns/core#Observatory">emobon-core:Observatory</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="environmentMaterial">
+<h3>Environment material
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sampling#environmentMaterial</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://data.emobon.embrc.eu/ns/sampling">The Sampling EMO-BON Ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>The physical material being collected</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+</li>
+<li>
+<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="investigationType">
+<h3>Investigation type
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sampling#investigationType</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://data.emobon.embrc.eu/ns/sampling">The Sampling EMO-BON Ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Describes what is intended to be done with the Environment material, i.e. the type of organisms to be investigated in that material</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<ul>
+<li>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+</li>
+<li>
+<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -1689,6 +1789,12 @@
 </li>
 <li>
 <a href="#soilType">Sediment type of a soil sample</a>
+</li>
+<li>
+<a href="#environmentMaterial">Environment material</a>
+</li>
+<li>
+<a href="#investigationType">Investigation type</a>
 </li>
 <li>
 <a href="#minSamplingDepth">Sampling depth of water column</a>
