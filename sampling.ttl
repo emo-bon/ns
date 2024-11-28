@@ -89,15 +89,6 @@
     rdfs:range            emobon-core:Observatory ;
 .
 
-<{{baseuri}}/{{name}}#enaStudyAccNum>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        "ENA study accession number associated to the observatory."@en ;
-    rdfs:label          "has ENA study accession number"@en ;
-    rdfs:domain         emobon-core:Observatory ;
-    rdfs:range          xsd:string ;
-.
-
 <{{baseuri}}/{{name}}#enaSampleAccNum>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
