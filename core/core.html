@@ -10,6 +10,20 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
+    "@id": "https://www.embrc.eu",
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "European Marine Biological Resource Centre"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.embrc.eu"
+      }
+    ]
+  },
+  {
     "@id": "https://orcid.org/0000-0003-0663-5907",
     "https://schema.org/affiliation": [
       {
@@ -52,29 +66,6 @@
     "https://schema.org/name": [
       {
         "@value": "Katrina Exter"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0001-7251-9504",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.embrc.eu"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:henriette007@ebi.ac.uk"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0001-7251-9504"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Henriette Harmse"
       }
     ]
   },
@@ -148,16 +139,25 @@
     ]
   },
   {
-    "@id": "https://www.embrc.eu",
-    "https://schema.org/name": [
-      {
-        "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
-      }
-    ],
-    "https://schema.org/url": [
+    "@id": "https://orcid.org/0000-0001-7251-9504",
+    "https://schema.org/affiliation": [
       {
         "@id": "https://www.embrc.eu"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:henriette007@ebi.ac.uk"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0001-7251-9504"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Henriette Harmse"
       }
     ]
   }
@@ -476,6 +476,12 @@
 <li>
 <span>
 <a href="#observatorySampleId">emobon-core:observatorySampleId</a>
+<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</span>
+</li>
+<li>
+<span>
+<a href="#siteInfo">Sampling site information</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 </li>
@@ -1438,10 +1444,56 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">emobon-core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
+<span>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="siteInfo">
+<h3>Sampling site information
+            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/core#siteInfo</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://data.emobon.embrc.eu/ns/core">The Core EMO-BON Ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Extra information on the sampling site of the observatory, in particular concerning other data collections from the same area, environmental activities or events, etc.</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
 <span>
 <a href="#Observatory">emobon-core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
@@ -1915,6 +1967,9 @@
 </li>
 <li>
 <a href="#originCountry">Country of origin of the sample</a>
+</li>
+<li>
+<a href="#siteInfo">Sampling site information</a>
 </li>
 <li>
 <a href="#legalName">legal name</a>

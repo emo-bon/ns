@@ -70,16 +70,6 @@
 .
 
 
-#### CLASSES Sample ####
-<https://data.emobon.embrc.eu/ns/sampling#siteInfo>
-    a owl:Class ; 
-    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment "Extra information on the sampling site, in particular concerning other data collections from the same area, environmental activities or events, etc." ; 
-    rdfs:label "Sampling site information" ; 
-    rdfs:subClassOf rdfs:comment ;
-.
-
-
 #### PROPERTIES Sample ####
 <https://data.emobon.embrc.eu/ns/sampling#origEmobonId
     a                     owl:DatatypeProperty ;
