@@ -10,43 +10,53 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
+    "@id": "https://data.emobon.embrc.eu/ns/core",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/contributor": [
       {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
+        "@id": "https://orcid.org/0000-0001-7251-9504"
       },
       {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0002-5911-1536",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:katrina.exter@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
         "@id": "https://orcid.org/0000-0002-5911-1536"
+      },
+      {
+        "@id": "https://orcid.org/0000-0003-0663-5907"
+      }
+    ],
+    "https://schema.org/creator": [
+      {
+        "@id": "https://www.embrc.eu"
+      }
+    ],
+    "https://schema.org/dateIssued": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-17"
+      }
+    ],
+    "https://schema.org/dateModified": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-07-26"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "The Core EMO-BON ontology provides definitions for the core classes and properties used in EMO-BON data."
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "Katrina Exter"
+        "@language": "en",
+        "@value": "The Core EMO-BON Ontology"
+      }
+    ],
+    "https://schema.org/publisher": [
+      {
+        "@id": "https://www.vliz.be/"
       }
     ]
   },
@@ -97,6 +107,24 @@
     ]
   },
   {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
     "@id": "https://www.embrc.eu",
     "https://schema.org/name": [
       {
@@ -111,53 +139,25 @@
     ]
   },
   {
-    "@id": "https://data.emobon.embrc.eu/ns/core",
-    "@type": [
-      "https://schema.org/DefinedTermSet"
-    ],
-    "https://schema.org/contributor": [
+    "@id": "https://orcid.org/0000-0002-5911-1536",
+    "https://schema.org/affiliation": [
       {
-        "@id": "https://orcid.org/0000-0001-7251-9504"
-      },
+        "@id": "https://www.vliz.be"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:katrina.exter@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
       {
         "@id": "https://orcid.org/0000-0002-5911-1536"
-      },
-      {
-        "@id": "https://orcid.org/0000-0003-0663-5907"
-      }
-    ],
-    "https://schema.org/creator": [
-      {
-        "@id": "https://www.embrc.eu"
-      }
-    ],
-    "https://schema.org/dateIssued": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-03-17"
-      }
-    ],
-    "https://schema.org/dateModified": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-07-26"
-      }
-    ],
-    "https://schema.org/description": [
-      {
-        "@language": "en",
-        "@value": "The Core EMO-BON ontology provides definitions for the core classes and properties used in EMO-BON data."
       }
     ],
     "https://schema.org/name": [
       {
-        "@language": "en",
-        "@value": "The Core EMO-BON Ontology"
-      }
-    ],
-    "https://schema.org/publisher": [
-      {
-        "@id": "https://www.vliz.be/"
+        "@value": "Katrina Exter"
       }
     ]
   }
@@ -1462,12 +1462,12 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">emobon-core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>

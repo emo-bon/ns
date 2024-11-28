@@ -259,14 +259,14 @@
     rdfs:range          qudt:QuantityValue ;
 .
 
-#note: if values could be converted to T ~ true|1 and F ~ false|0 then datatype can be xsd:boolean
+#note: values to be converted to 1 and 0 hence datatype changed to xsd:boolean
 <https://data.emobon.embrc.eu/ns/sampling#failure>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "Indication of failure in data generation, which may have occured at any stage of the workflow; takes True (T) or False (F) values."@en ;
     rdfs:label          "sample failure"@en ;
     rdfs:domain         sosa:Sample ;
-    rdfs:range          xsd:string ; 
+    rdfs:range          xsd:boolean ; 
 .
 
 <https://data.emobon.embrc.eu/ns/sampling#failureComment>
