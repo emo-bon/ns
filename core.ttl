@@ -342,6 +342,15 @@ schema:address
     rdfs:range          xsd:string ;
 .
 
+<{{baseuri}}/{{name}}#enaProjAccNum>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "ENA project accession number associated to this observatory."@en ;
+    rdfs:label          "has ENA project accession number"@en ;
+    rdfs:domain         schema:Project ;
+    rdfs:range          xsd:string ;
+.
+
 schema:legalName
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain schema:Organization ;
