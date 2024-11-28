@@ -89,15 +89,6 @@
     rdfs:range            emobon-core:Observatory ;
 .
 
-<https://data.emobon.embrc.eu/ns/sampling#enaProjAccNum>
-    a                   owl:DatatypeProperty ;
-    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "ENA project accession number associated to this observatory."@en ;
-    rdfs:label          "has ENA project accession number"@en ;
-    rdfs:domain         schema:Project ;
-    rdfs:range          xsd:string ;
-.
-
 <https://data.emobon.embrc.eu/ns/sampling#enaStudyAccNum>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
