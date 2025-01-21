@@ -89,6 +89,15 @@
     rdfs:range            emobon-core:Observatory ;
 .
 
+<{{baseuri}}/{{name}}#origEmobonId>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "The original EMO BON ID, which is a unique identifier assigned to a material sample according to EMO BON Handbook."@en ;
+    rdfs:label          "has original EMO BON ID"@en ;
+    rdfs:domain         sosa:Sample ;
+    rdfs:range          xsd:string ;
+.
+
 <{{baseuri}}/{{name}}#enaSampleAccNum>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
