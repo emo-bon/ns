@@ -61,30 +61,7 @@
     ]
   },
   {
-    "@id": "https://orcid.org/0000-0001-7251-9504",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.embrc.eu"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:henriette007@ebi.ac.uk"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0001-7251-9504"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Henriette Harmse"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0002-5911-1536",
+    "@id": "https://orcid.org/0000-0003-0663-5907",
     "https://schema.org/affiliation": [
       {
         "@id": "https://www.vliz.be"
@@ -92,17 +69,17 @@
     ],
     "https://schema.org/email": [
       {
-        "@id": "mailto:katrina.exter@vliz.be"
+        "@id": "mailto:laurian.van.maldeghem@vliz.be"
       }
     ],
     "https://schema.org/identifier": [
       {
-        "@id": "https://orcid.org/0000-0002-5911-1536"
+        "@id": "https://orcid.org/0000-0003-0663-5907"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "Katrina Exter"
+        "@value": "Laurian Van Maldeghem"
       }
     ]
   },
@@ -139,7 +116,7 @@
     ]
   },
   {
-    "@id": "https://orcid.org/0000-0003-0663-5907",
+    "@id": "https://orcid.org/0000-0002-5911-1536",
     "https://schema.org/affiliation": [
       {
         "@id": "https://www.vliz.be"
@@ -147,17 +124,40 @@
     ],
     "https://schema.org/email": [
       {
-        "@id": "mailto:laurian.van.maldeghem@vliz.be"
+        "@id": "mailto:katrina.exter@vliz.be"
       }
     ],
     "https://schema.org/identifier": [
       {
-        "@id": "https://orcid.org/0000-0003-0663-5907"
+        "@id": "https://orcid.org/0000-0002-5911-1536"
       }
     ],
     "https://schema.org/name": [
       {
-        "@value": "Laurian Van Maldeghem"
+        "@value": "Katrina Exter"
+      }
+    ]
+  },
+  {
+    "@id": "https://orcid.org/0000-0001-7251-9504",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.embrc.eu"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:henriette007@ebi.ac.uk"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0001-7251-9504"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Henriette Harmse"
       }
     ]
   }
@@ -380,10 +380,17 @@
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#subClassOf" title="The subject is a subclass of a class. Defined in The RDF Schema vocabulary (RDFS)">Sub Class Of</a>
 </th>
 <td>
+<ul>
+<li>
 <span>
 <a href="http://www.w3.org/ns/prov#Activity">Activity</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
+</li>
+<li>
+<a href="http://purl.obolibrary.org/obo/OBI_0000070">obi:0000070</a>
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -401,7 +408,7 @@
 <li>
 <span>
 <a href="#sop">relevant standard operating procedures for the sequencing work</a>
-<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
+<sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
@@ -810,6 +817,52 @@
 </span>
 </li>
 </ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="property entity" id="sop">
+<h3>relevant standard operating procedures for the sequencing work
+            <sup class="sup-op" title="OWL Object Property">op</sup>
+</h3>
+<table>
+<tr>
+<th>IRI</th>
+<td>
+<code>https://data.emobon.embrc.eu/ns/sequence#sop</code>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
+</th>
+<td>
+<a href="https://data.emobon.embrc.eu/ns/sequence">The Sequence EMO-BON Ontology</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+</th>
+<td><p>Standard operating procedures used in the sequencing molecular work</p></td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
+</th>
+<td>
+<span>
+<a href="#Asequencingrun">A sequencing run</a>
+<sup class="sup-c" title="OWL/RDFS Class">c</sup>
+</span>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
+</th>
+<td>
+<a href="http://purl.obolibrary.org/obo/OBI_0000272">obi:0000272</a>
 </td>
 </tr>
 </table>
@@ -1446,59 +1499,6 @@
 </th>
 <td>
 <a href="http://www.w3.org/2001/XMLSchema#date">xsd:date</a>
-</td>
-</tr>
-</table>
-</div>
-<div class="property entity" id="sop">
-<h3>relevant standard operating procedures for the sequencing work
-            <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-</h3>
-<table>
-<tr>
-<th>IRI</th>
-<td>
-<code>https://data.emobon.embrc.eu/ns/sequence#sop</code>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#isDefinedBy" title="The definition of the subject resource. Defined in The RDF Schema vocabulary (RDFS)">Is Defined By</a>
-</th>
-<td>
-<a href="https://data.emobon.embrc.eu/ns/sequence">The Sequence EMO-BON Ontology</a>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
-</th>
-<td><p>Standard operating procedures used in the sequencing molecular work</p></td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
-</th>
-<td>
-<span>
-<a href="#Asequencingrun">A sequencing run</a>
-<sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#range" title="A range of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Range</a>
-</th>
-<td>
-<ul>
-<li>
-<a href="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
-</li>
-<li>
-<a href="http://www.w3.org/2001/XMLSchema#anyURI">xsd:anyURI</a>
-</li>
-</ul>
 </td>
 </tr>
 </table>
@@ -2220,6 +2220,10 @@
 <dd>
 <code>http://xmlns.com/foaf/0.1/</code>
 </dd>
+<dt id="obi">obi</dt>
+<dd>
+<code>http://purl.obolibrary.org/obo/OBI_</code>
+</dd>
 <dt id="owl">owl</dt>
 <dd>
 <code>http://www.w3.org/2002/07/owl#</code>
@@ -2331,6 +2335,9 @@
 <a href="#associatedSample">associated sample</a>
 </li>
 <li>
+<a href="#sop">relevant standard operating procedures for the sequencing work</a>
+</li>
+<li>
 <a href="#proMockSeqReadsFile">correspoding prokaryotes mock community sequencing reads filename</a>
 </li>
 <li>
@@ -2375,9 +2382,6 @@
 </li>
 <li>
 <a href="#arrivalDate">arrival date</a>
-</li>
-<li>
-<a href="#sop">relevant standard operating procedures for the sequencing work</a>
 </li>
 <li>
 <a href="#electronicResource">relevant electronic resources for the sequencing work</a>
@@ -2442,6 +2446,9 @@
 </li>
 <li>
 <a href="#foaf">foaf</a>
+</li>
+<li>
+<a href="#obi">obi</a>
 </li>
 <li>
 <a href="#owl">owl</a>
