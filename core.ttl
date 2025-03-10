@@ -435,3 +435,21 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         skos:definition        "Water sample type"@en ;
         skos:altLabel          "water"
         .
+
+<https://data.emobon.embrc.eu/ns/core#blankSample>
+        rdf:type               skos:Concept ;
+        dc:date                "2025-03-10" ;
+        dc:identifier          "Blank Sample" ;
+        skos:prefLabel         "Blank Sample"@en ;
+        skos:definition        "Blank sample"@en ;
+        skos:altLabel          "blankSample"
+        .
+
+<https://data.emobon.embrc.eu/ns/core#fieldSample>
+        rdf:type               skos:Concept ;
+        dc:date                "2025-03-10" ;
+        dc:identifier          "Field Sample" ;
+        skos:prefLabel         "Field Sample"@en ;
+        skos:definition        "Field sample"@en ;
+        skos:altLabel          "fieldSample"
+        .
