@@ -65,3 +65,12 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         skos:definition        " "Temperature measured at the water surface""@en ;
         skos:altLabel          " "Temperature at surface""
         .
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Sulfide">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "sulfide"" ;
+        skos:prefLabel         " "sulfide""@en ;
+        skos:definition        " "Concentration of sulfide in the sample""@en ;
+        skos:altLabel          " "Sulfide concentration""
+        .
