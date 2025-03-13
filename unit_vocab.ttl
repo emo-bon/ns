@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/unit#"Cells_Per_Sampleunit">
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          " "cells_per_sampleUnit"" ;
+        skos:prefLabel         " "cells_per_sampleUnit""@en ;
+        skos:definition        " "Total number of cells per gram"@en ;
+        skos:altLabel          " volume"
+        .
