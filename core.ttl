@@ -256,6 +256,7 @@ schema:address
   a                   owl:DatatypeProperty ;
   rdfs:domain         <https://data.emobon.embrc.eu/ns/core#Observatory> , sosa:Sampling ;
   rdfs:range          xsd:anyURI ;
+  owl:seeAlso         <https://dwc.tdwg.org/terms/#dwc:higherGeographyID> ; 
 .
 
 <https://data.emobon.embrc.eu/ns/core#marineRegionName>
