@@ -265,6 +265,7 @@ schema:address
   rdfs:label          "Name associated with the marine region."@en ;
   rdfs:domain         <{{baseuri}}/{{name}}#Observatory> , sosa:Sampling ;
   rdfs:range          xsd:string ;
+  owl:seeAlso         <http://rs.tdwg.org/dwc/terms/higherGeography> , <https://genomicsstandardsconsortium.github.io/mixs/0000010/> ;
 .
 
 <{{baseuri}}/{{name}}#observatoryId>
