@@ -314,6 +314,7 @@
     rdfs:label          "lower filter size"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          qudt:QuantityValue ; 
+    owl:seeAlse        <http://vocab.nerc.ac.uk/collection/P01/current/PRSZSPLW/> ;
 .
 
 <{{baseuri}}/{{name}}#upperFilterSize>
@@ -323,4 +324,5 @@
     rdfs:label          "upper filter size"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          qudt:QuantityValue ; 
+    owl:seeAlse        <http://vocab.nerc.ac.uk/collection/P01/current/PRSZSPUP/> ;
 .

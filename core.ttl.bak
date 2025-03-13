@@ -351,6 +351,7 @@ schema:address
     rdfs:label          "has ENA project accession number"@en ;
     rdfs:domain         schema:Project ;
     rdfs:range          xsd:string ;
+    owl:seeAlso         <http://rs.tdwg.org/dwc/terms/associatedSequences> ;
 .
 
 <{{baseuri}}/{{name}}#enaStudyAccNum>
@@ -360,6 +361,7 @@ schema:address
     rdfs:label          "has ENA study accession number"@en ;
     rdfs:domain         <{{baseuri}}/{{name}}#Observatory> ;
     rdfs:range          xsd:string ;
+    owl:seeAlso         <http://rs.tdwg.org/dwc/terms/associatedSequences> ;
 .
 
 schema:legalName
