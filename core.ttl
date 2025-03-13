@@ -256,6 +256,7 @@ schema:address
   a                   owl:DatatypeProperty ;
   rdfs:domain         <{{baseuri}}/{{name}}#Observatory> , sosa:Sampling ;
   rdfs:range          xsd:anyURI ;
+  owl:seeAlso         <https://dwc.tdwg.org/terms/#dwc:higherGeographyID> ; 
 .
 
 <{{baseuri}}/{{name}}#marineRegionName>
