@@ -6,3 +6,4 @@
 "5", "2025-03-10", "temp_sampledepth", "Temperature measured at the depth of the sampling", "Temperature at Sample depth","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
 "6", "2025-03-10", "sal_surface", "Salinity measured at the water surface", "Salinity at surface","http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/",
 "7", "2025-03-10", "temp_surface", "Temperature measured at the water surface", "Temperature at surface","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
+"8", "2025-03-10", "sulfide", "Concentration of sulfide in the sample", "Sulfide concentration",,"http://vocab.nerc.ac.uk/collection/P01/current/H2SXZZXX/"
