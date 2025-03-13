@@ -1,0 +1,67 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Biomass">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "biomass"" ;
+        skos:prefLabel         " "biomass""@en ;
+        skos:definition        " "The amount of biomass""@en ;
+        skos:altLabel          " "biomass""
+        .
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Chem_Administration">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "chem_administration"" ;
+        skos:prefLabel         " "chem_administration""@en ;
+        skos:definition        " "Chemical compounds administered to the host or site where sampling occurred""@en ;
+        skos:altLabel          " "Chemical administration""
+        .
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Cells_Per_Sampleunit">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "cells_per_sampleUnit"" ;
+        skos:prefLabel         " "cells_per_sampleUnit""@en ;
+        skos:definition        " "Total number of cells per gram"@en ;
+        skos:altLabel          " volume"
+        .
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Sal_Sampledepth">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "sal_sampledepth"" ;
+        skos:prefLabel         " "sal_sampledepth""@en ;
+        skos:definition        " "Salinity measured at the depth of the sampling""@en ;
+        skos:altLabel          " "Salinity at Sample depth""
+        .
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Temp_Sampledepth">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "temp_sampledepth"" ;
+        skos:prefLabel         " "temp_sampledepth""@en ;
+        skos:definition        " "Temperature measured at the depth of the sampling""@en ;
+        skos:altLabel          " "Temperature at Sample depth""
+        .
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Sal_Surface">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "sal_surface"" ;
+        skos:prefLabel         " "sal_surface""@en ;
+        skos:definition        " "Salinity measured at the water surface""@en ;
+        skos:altLabel          " "Salinity at surface""
+        .
+
+<https://data.emobon.embrc.eu/ns/logsheet#"Temp_Surface">
+        rdf:type               skos:Concept ;
+        dc:date                " "2025-03-10"" ;
+        dc:identifier          " "temp_surface"" ;
+        skos:prefLabel         " "temp_surface""@en ;
+        skos:definition        " "Temperature measured at the water surface""@en ;
+        skos:altLabel          " "Temperature at surface""
+        .
