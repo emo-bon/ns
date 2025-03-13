@@ -1,0 +1,8 @@
+"ID","DATE","PREFLABEL_EN","DEFINITION_EN","ALTLABEL_EN","BROADER","NARROWER"
+"1", "2025-03-10", "biomass", "The amount of biomass", "biomass",,
+"2", "2025-03-10", "chem_administration", "Chemical compounds administered to the host or site where sampling occurred", "Chemical administration",,
+"3", "2025-03-10", "cells_per_sampleUnit", "Total number of cells per gram, volume, or area of sample", "Cells per sample unit",,
+"4", "2025-03-10", "sal_sampledepth", "Salinity measured at the depth of the sampling", "Salinity at Sample depth","http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/",
+"5", "2025-03-10", "temp_sampledepth", "Temperature measured at the depth of the sampling", "Temperature at Sample depth","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
+"6", "2025-03-10", "sal_surface", "Salinity measured at the water surface", "Salinity at surface","http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/",
+"7", "2025-03-10", "temp_surface", "Temperature measured at the water surface", "Temperature at surface","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
