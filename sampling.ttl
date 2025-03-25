@@ -101,7 +101,7 @@
 <{{baseuri}}/{{name}}#enaSampleAccNum>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        "ENA sample accession number associated with the sample."@en ;
+    rdfs:comment        "A unique identifier associated with a sample in the European Nucleotide Archive (ENA). It also serves as a reference point for metadata records that contain links to related ENA accession numbers, including study and experiment records, ultimately leading to the actual sequence data"@en ;
     rdfs:label          "has ENA sample accession number"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          xsd:string ;
