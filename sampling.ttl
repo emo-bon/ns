@@ -149,6 +149,21 @@
                                 sosa:Sample
                             ) ; 
                         ] ;
+    rdfs:range          xsd:anyURI ;
+.
+
+<{{baseuri}}/{{name}}#taxonomicName>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "Scientific name of the organism as in the NCBI Taxonomy database. "@en ;
+    rdfs:label          "Scientific name"@en ;
+    rdfs:domain         [
+                            a owl:Class ; 
+                            owl:unionOf (
+                                sosa:Sampling
+                                sosa:Sample
+                            ) ; 
+                        ] ;
     rdfs:range          xsd:string ;
 .
 
