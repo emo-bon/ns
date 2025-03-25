@@ -11,3 +11,12 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         skos:definition        " "Total number of cells per gram"@en ;
         skos:altLabel          " volume"
         .
+
+<https://data.emobon.embrc.eu/ns/unit#"Micrograms_Cubicmetre_Day">
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-25" ;
+        dc:identifier          " "micrograms_cubicmetre_day"" ;
+        skos:prefLabel         " "micrograms_cubicmetre_day""@en ;
+        skos:definition        " "Micrograms per cubic metre per day""@en ;
+        skos:altLabel          " "ug/m^3/d""
+        .
