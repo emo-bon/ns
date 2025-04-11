@@ -11,9 +11,10 @@
 @prefix prov: <http://www.w3.org/ns/prov#> . 
 @prefix qudt: <http://qudt.org/schema/qudt/>.
 
-@prefix emobon-core: <{{baseuri}}/core#> .
-@prefix emobon-sampling: <{{baseuri}}/{{name}}#> .
-@prefix emobon-sequence: <{{baseuri}}/sequence#> .
+@prefix core: <{{baseuri}}/core#> .
+@prefix sampling: <{{baseuri}}/{{name}}#> .
+@prefix seq: <{{baseuri}}/sequence#> .
+@prefic prod: <{{baseuri}}/product#> .
 
 <{{baseuri}}/{{name}}>
   a owl:Ontology ;
@@ -25,12 +26,8 @@
   dct:issued      "2023-03-17"^^xsd:date ;
   dct:modified    "2023-07-26"^^xsd:date ;
   dc:license     <https://creativecommons.org/licenses/by/4.0/> ;
-  dc:contributor 
-    <https://orcid.org/0000-0001-7251-9504>,
-    <https://orcid.org/0000-0002-5911-1536>,
-    <https://orcid.org/0000-0003-0663-5907>;
   dc:creator <https://www.embrc.eu> ;
-  vann:preferredNamespacePrefix "emobon-sampling" ;
+  vann:preferredNamespacePrefix "sampling" ;
   vann:preferredNamespaceUri    "{{baseuri}}/{{name}}#" .
 
 <https://orcid.org/0000-0001-7251-9504>
@@ -86,7 +83,7 @@
     rdfs:comment          "The observatory that is linked to the sampling event."@en ;
     rdfs:label            "is linked to observatory"@en ;
     rdfs:domain           sosa:Sampling ;
-    rdfs:range            emobon-core:Observatory ;
+    rdfs:range            core:Observatory ;
 .
 
 <{{baseuri}}/{{name}}#origEmobonId>

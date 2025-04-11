@@ -1,0 +1,122 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix qudt: <http://qudt.org/schema/qudt/>.
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_>.
+
+@prefix core: <{{baseuri}}/core#> .
+@prefix sampling: <{{baseuri}}/sampling#> .
+@prefix seq: <{{baseuri}}/sequence#> .
+@prefic prod: <{{baseuri}}/{{name}}#> .
+
+<{{baseuri}}/{{name}}>
+  a owl:Ontology ;
+  owl:versionIRI <{{baseuri}}/{{name}}.ttl> ;
+  rdfs:label     "The Product EMO-BON Ontology"@en ;
+  rdfs:comment   "The Product EMO-BON ontology provides definitions for the sequence-analysis-product classes and properties used in EMO-BON data."@en ;
+  dc:publisher   <https://www.vliz.be/> ;
+  dct:issued      "2023-04-11"^^xsd:date ;
+  dct:modified    "2023-04-11"^^xsd:date ;
+  dc:license     <https://creativecommons.org/licenses/by/4.0/> ;
+  dc:creator <https://www.embrc.eu> ;
+  vann:preferredNamespacePrefix "prod" ;
+  vann:preferredNamespaceUri    "{{baseuri}}/{{name}}#" ;
+.  
+
+<https://www.vliz.be/>
+  a schema:Organization ;
+  schema:name   "Vlaams Instituut voor de Zee"@nl ;
+  schema:name   "Flanders Marine Institute"@en ;
+  schema:url    <https://www.vliz.be/> ;
+.
+
+<https://www.embrc.eu>
+  a schema:Organization ;
+  schema:name   "European Marine Biological Resource Centre"@en ;
+  schema:url    <https://www.embrc.eu> ;
+.
+
+
+#### CLASSES Sequence ####
+prod:Product
+    a owl:Class ; 
+    rdfs:isDefinedBy <{{baseuri}}/{{name}}> ;
+    rdfs:comment "A product of a sequence analysis."@en ; 
+    rdfs:label "MetaGOFlow Analysis Product" ; 
+    rdfs:subClassOf owl:Thing ;
+.
+
+<{{baseuri}}/{{name}}#FunctionalAnnotation>
+    a owl:Class ; 
+    rdfs:isDefinedBy <{{baseuri}}/{{name}}> ;
+    rdfs:comment "A functional annotation, which is a type of analysis product, resulting from a sequence analysis."@en ; 
+    rdfs:label "Functional Annotation" ; 
+    rdfs:subClassOf prod:Product ; 
+.
+
+<{{baseuri}}/{{name}}#TaxonomicAnnotation>
+    a owl:Class ; 
+    rdfs:isDefinedBy <{{baseuri}}/{{name}}> ;
+    rdfs:comment "A taxonomic annotation, which is a type of analysis product, resulting from a sequence analysis."@en ; 
+    rdfs:label "Taxonomic Annotation" ; 
+    rdfs:subClassOf prod:Product ; 
+.
+
+#### PROPERTIES ####
+<{{baseuri}}/{{name}}#ofSample> 
+    a                     owl:ObjectProperty ;
+    rdfs:isDefinedBy      <{{baseuri}}/{{name}}> ;
+    rdfs:comment          "The Sample to which this analysis product is linked"@en ;
+    rdfs:label            "of sample"@en ;
+    rdfs:domain           [
+        a owl:Class ;
+        owl:unionOf ( <{{baseuri}}/{{name}}#FunctionalAnnotation> <{{baseuri}}/{{name}}#TaxonomicAnnotation> )
+    ] ;
+    rdfs:range            sosa:Sample ;
+.
+
+## functional annotation properties
+<{{baseuri}}/{{name}}#name>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "The name of the GO / GO_slim functional annotation"@en ;
+    rdfs:label          "Name"@en ;
+    rdfs:domain         prod:FunctionalAnnotation ;
+    rdfs:range          xsd:string ;
+.
+
+<{{baseuri}}/{{name}}#aspect>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "The aspect of the GO / GO_slim functional annotation"@en ;
+    rdfs:label          "Aspect"@en ;
+    rdfs:domain         prod:FunctionalAnnotation ;
+    rdfs:range          xsd:string ;
+.
+
+## taxonomic annotation properties
+<{{baseuri}}/{{name}}#otuID>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        ""@en ;
+    rdfs:label          ""@en ;
+    rdfs:domain         prod:TaxonomicAnnotation ;
+    rdfs:range          xsd:integer ;
+.
+
+<{{baseuri}}/{{name}}#ssuRNA>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        ""@en ;
+    rdfs:label          ""@en ;
+    rdfs:domain         prod:TaxonomicAnnotation ;
+    rdfs:range          xsd:double ;
+.
