@@ -106,17 +106,17 @@ prod:Product
 <{{baseuri}}/{{name}}#otuID>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        ""@en ;
-    rdfs:label          ""@en ;
+    rdfs:comment        "The internal OTU ID of EMBL-EBI"@en ;
+    rdfs:label          "OTU identifier"@en ;
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:integer ;
 .
 
-<{{baseuri}}/{{name}}#ssuRNA>
+<{{baseuri}}/{{name}}#rRNA>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        ""@en ;
-    rdfs:label          ""@en ;
+    rdfs:comment        "The number of times the genetic marker gene was detected, serving as a proxy for the abundance of this taxon in the sample"@en ;
+    rdfs:label          "rRNA count"@en ;
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:double ;
 .
