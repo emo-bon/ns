@@ -115,7 +115,7 @@ prod:Product
 <{{baseuri}}/{{name}}#rRNA>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        "The number of times the genetic marker gene was detected, serving as a proxy for the abundance of this taxon in the sample"@en ;
+    rdfs:comment        "The number of times the genetic marker gene was detected, serving as a proxy for the abundance of the identified taxon in the sample"@en ;
     rdfs:label          "rRNA count"@en ;
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:double ;
@@ -124,7 +124,7 @@ prod:Product
 <{{baseuri}}/{{name}}#geneticMarker>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
-    rdfs:comment        "the Genetic marker used in the analysis, either the 'Small subunit ribosomal RNA gene (SSU)' or 'Large subunit ribosomal RNA gene (LSU)'"@en ;
+    rdfs:comment        "the Genetic marker gene used for taxon identification in the analysis"@en ;
     rdfs:label          "Genetic Marker"@en ;
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:string ;
