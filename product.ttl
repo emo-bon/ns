@@ -120,3 +120,12 @@ prod:Product
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:double ;
 .
+
+<{{baseuri}}/{{name}}#geneticMarker>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "the Genetic marker used in the analysis, either the 'Small subunit ribosomal RNA gene (SSU)' or 'Large subunit ribosomal RNA gene (LSU)'"@en ;
+    rdfs:label          "Genetic Marker"@en ;
+    rdfs:domain         prod:TaxonomicAnnotation ;
+    rdfs:range          xsd:string ;
+.
