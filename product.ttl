@@ -1,0 +1,206 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> . 
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix prov: <http://www.w3.org/ns/prov#> . 
+@prefix qudt: <http://qudt.org/schema/qudt/>.
+@prefix obi: <http://purl.obolibrary.org/obo/OBI_>.
+
+@prefix core: <https://data.emobon.embrc.eu/ns/core#> .
+@prefix sampling: <https://data.emobon.embrc.eu/ns/sampling#> .
+@prefix seq: <https://data.emobon.embrc.eu/ns/sequence#> .
+@prefix prod: <https://data.emobon.embrc.eu/ns/product#> .
+
+<https://data.emobon.embrc.eu/ns/product>
+  a owl:Ontology ;
+  owl:versionIRI <https://data.emobon.embrc.eu/ns/product.ttl> ;
+  rdfs:label     "The Product EMO-BON Ontology"@en ;
+  rdfs:comment   "The Product EMO-BON ontology provides definitions for the sequence-analysis-product classes and properties used in EMO-BON data."@en ;
+  dc:publisher   <https://www.vliz.be/> ;
+  dct:issued      "2023-04-11"^^xsd:date ;
+  dct:modified    "2023-04-11"^^xsd:date ;
+  dc:license     <https://creativecommons.org/licenses/by/4.0/> ;
+  dc:creator <https://www.embrc.eu> ;
+  vann:preferredNamespacePrefix "prod" ;
+  vann:preferredNamespaceUri    "https://data.emobon.embrc.eu/ns/product#" ;
+.  
+
+<https://www.vliz.be/>
+  a schema:Organization ;
+  schema:name   "Vlaams Instituut voor de Zee"@nl ;
+  schema:name   "Flanders Marine Institute"@en ;
+  schema:url    <https://www.vliz.be/> ;
+.
+
+<https://www.embrc.eu>
+  a schema:Organization ;
+  schema:name   "European Marine Biological Resource Centre"@en ;
+  schema:url    <https://www.embrc.eu> ;
+.
+
+
+#### CLASSES Sequence ####
+prod:Product
+    a owl:Class ; 
+    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment "A product of a sequence analysis."@en ; 
+    rdfs:label "MetaGOFlow Analysis Product" ; 
+    rdfs:subClassOf owl:Thing ;
+.
+
+<https://data.emobon.embrc.eu/ns/product#FunctionalAnnotation>
+    a owl:Class ; 
+    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment "A functional annotation, which is a type of analysis product, resulting from a sequence analysis."@en ; 
+    rdfs:label "Functional Annotation" ; 
+    rdfs:subClassOf prod:Product ; 
+.
+
+<https://data.emobon.embrc.eu/ns/product#TaxonomicAnnotation>
+    a owl:Class ; 
+    rdfs:isDefinedBy <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment "A taxonomic annotation, which is a type of analysis product, resulting from a sequence analysis."@en ; 
+    rdfs:label "Taxonomic Annotation" ; 
+    rdfs:subClassOf prod:Product ; 
+.
+
+#### PROPERTIES ####
+<https://data.emobon.embrc.eu/ns/product#ofSample> 
+    a                     owl:ObjectProperty ;
+    rdfs:isDefinedBy      <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment          "The Sample to which this analysis product is linked"@en ;
+    rdfs:label            "of sample"@en ;
+    rdfs:domain           [
+        a owl:Class ;
+        owl:unionOf ( <https://data.emobon.embrc.eu/ns/product#FunctionalAnnotation> <https://data.emobon.embrc.eu/ns/product#TaxonomicAnnotation> )
+    ] ;
+    rdfs:range            sosa:Sample ;
+.
+
+## functional annotation properties
+<https://data.emobon.embrc.eu/ns/product#name>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment        "The name of the GO / GO_slim functional annotation"@en ;
+    rdfs:label          "Name"@en ;
+    rdfs:domain         prod:FunctionalAnnotation ;
+    rdfs:range          xsd:string ;
+.
+
+<https://data.emobon.embrc.eu/ns/product#aspect>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment        "The aspect of the GO / GO_slim functional annotation"@en ;
+    rdfs:label          "Aspect"@en ;
+    rdfs:domain         prod:FunctionalAnnotation ;
+    rdfs:range          xsd:string ;
+.
+
+## taxonomic annotation properties
+<https://data.emobon.embrc.eu/ns/product#otuID>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment        "The internal OTU ID of EMBL-EBI"@en ;
+    rdfs:label          "OTU identifier"@en ;
+    rdfs:domain         prod:TaxonomicAnnotation ;
+    rdfs:range          xsd:integer ;
+.
+
+<https://data.emobon.embrc.eu/ns/product#rRNA>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment        "The number of times the genetic marker gene was detected, serving as a proxy for the abundance of the identified taxon in the sample"@en ;
+    rdfs:label          "rRNA count"@en ;
+    rdfs:domain         prod:TaxonomicAnnotation ;
+    rdfs:range          xsd:double ;
+.
+
+<https://data.emobon.embrc.eu/ns/product#geneticMarker>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/product> ;
+    rdfs:comment        "the Genetic marker gene used for taxon identification in the analysis"@en ;
+    rdfs:label          "Genetic Marker"@en ;
+    rdfs:domain         prod:TaxonomicAnnotation ;
+    rdfs:range          xsd:string ;
+.PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/product#go>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "GO" ;
+        skos:prefLabel         "GO"@en ;
+        skos:definition        "fucntional annotation representing a Gene Ontology term"@en ;
+        skos:altLabel          "GO"
+        .
+
+<https://data.emobon.embrc.eu/ns/product#go_slim>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "GO_SLIM" ;
+        skos:prefLabel         "GO_SLIM"@en ;
+        skos:definition        "fucntional annotation representing a Gene Ontology term"@en ;
+        skos:altLabel          "GO_SLIM"
+        .
+
+<https://data.emobon.embrc.eu/ns/product#interpro>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "InterPro" ;
+        skos:prefLabel         "InterPro"@en ;
+        skos:definition        "functional annotation representing an InterPro protein family"@en ;
+        skos:altLabel          "InterPro"
+        .
+
+<https://data.emobon.embrc.eu/ns/product#kegg>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "KEGG" ;
+        skos:prefLabel         "KEGG"@en ;
+        skos:definition        "functional annotation representing a KEGG orthology term"@en ;
+        skos:altLabel          "KEGG"
+        .
+
+<https://data.emobon.embrc.eu/ns/product#pfam>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "PFAM" ;
+        skos:prefLabel         "PFAM"@en ;
+        skos:definition        "functional annotation representing a PFAM protein family"@en ;
+        skos:altLabel          "PFAM"
+        .
+
+<https://data.emobon.embrc.eu/ns/product#eggnog>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "EGGNOG" ;
+        skos:prefLabel         "EGGNOG"@en ;
+        skos:definition        "functional annotation representing a EGGNOG term"@en ;
+        skos:altLabel          "EGGNOG"
+        .
+
+<https://data.emobon.embrc.eu/ns/product#ssu>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "SSU" ;
+        skos:prefLabel         "SSU"@en ;
+        skos:definition        "Small subunit ribosomal RNA gene (SSU)"@en ;
+        skos:altLabel          "SSU"
+        .
+
+<https://data.emobon.embrc.eu/ns/product#lsu>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          "LSU" ;
+        skos:prefLabel         "LSU"@en ;
+        skos:definition        "Large subunit ribosomal RNA gene (LSU)"@en ;
+        skos:altLabel          "LSU"
+        .

@@ -12,9 +12,10 @@
 @prefix qudt: <http://qudt.org/schema/qudt/>.
 @prefix obi: <http://purl.obolibrary.org/obo/OBI_>.
 
-@prefix emobon-core: <{{baseuri}}/core#> .
-@prefix emobon-sampling: <{{baseuri}}/sampling#> .
-@prefix emobon-sequence: <{{baseuri}}/{{name}}#> .
+@prefix core: <{{baseuri}}/core#> .
+@prefix sampling: <{{baseuri}}/sampling#> .
+@prefix seq: <{{baseuri}}/{{name}}#> .
+@prefix prod: <{{baseuri}}/product#> .
 
 <{{baseuri}}/{{name}}>
   a owl:Ontology ;
@@ -26,12 +27,8 @@
   dct:issued      "2023-03-17"^^xsd:date ;
   dct:modified    "2023-07-26"^^xsd:date ;
   dc:license     <https://creativecommons.org/licenses/by/4.0/> ;
-  dc:contributor
-    <https://orcid.org/0000-0001-7251-9504>,
-    <https://orcid.org/0000-0002-5911-1536>,
-    <https://orcid.org/0000-0003-0663-5907>;
   dc:creator <https://www.embrc.eu> ;
-  vann:preferredNamespacePrefix "emobon-sequence" ;
+  vann:preferredNamespacePrefix "seq" ;
   vann:preferredNamespaceUri    "{{baseuri}}/{{name}}#" .
 
 

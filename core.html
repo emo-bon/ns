@@ -10,48 +10,20 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://orcid.org/0000-0003-0663-5907",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:laurian.van.maldeghem@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0003-0663-5907"
-      }
-    ],
+    "@id": "https://www.vliz.be/",
     "https://schema.org/name": [
       {
-        "@value": "Laurian Van Maldeghem"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0001-7251-9504",
-    "https://schema.org/affiliation": [
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
       {
-        "@id": "https://www.embrc.eu"
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
       }
     ],
-    "https://schema.org/email": [
+    "https://schema.org/url": [
       {
-        "@id": "mailto:henriette007@ebi.ac.uk"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0001-7251-9504"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Henriette Harmse"
+        "@id": "https://www.vliz.be/"
       }
     ]
   },
@@ -107,20 +79,25 @@
     ]
   },
   {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
+    "@id": "https://orcid.org/0000-0003-0663-5907",
+    "https://schema.org/affiliation": [
       {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
+        "@id": "https://www.vliz.be"
       }
     ],
-    "https://schema.org/url": [
+    "https://schema.org/email": [
       {
-        "@id": "https://www.vliz.be/"
+        "@id": "mailto:laurian.van.maldeghem@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0003-0663-5907"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Laurian Van Maldeghem"
       }
     ]
   },
@@ -158,6 +135,29 @@
     "https://schema.org/url": [
       {
         "@id": "https://www.embrc.eu"
+      }
+    ]
+  },
+  {
+    "@id": "https://orcid.org/0000-0001-7251-9504",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.embrc.eu"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:henriette007@ebi.ac.uk"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0001-7251-9504"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Henriette Harmse"
       }
     ]
   }
@@ -330,14 +330,14 @@
 <dt>
 <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespacePrefix" title="None. Defined in None">Preferred Namespace Prefix</a>
 </dt>
-<dd><p>emobon-core</p></dd>
+<dd><p>core</p></dd>
 </div>
 <div>
 <dt>
 <a class="hover_property" href="http://purl.org/vocab/vann/preferredNamespaceUri" title="None. Defined in None">Preferred Namespace Uri</a>
 </dt>
 <dd>
-<a href="https://data.emobon.embrc.eu/ns/core#">emobon-core:</a>
+<a href="https://data.emobon.embrc.eu/ns/core#">core:</a>
 </dd>
 </div>
 <div>
@@ -406,7 +406,7 @@
 <ul>
 <li>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </li>
@@ -451,13 +451,13 @@
 <ul>
 <li>
 <span>
-<a href="#hasBiome">emobon-core:hasBiome</a>
+<a href="#hasBiome">core:hasBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#marineRegion">emobon-core:marineRegion</a>
+<a href="#marineRegion">core:marineRegion</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 </li>
@@ -469,13 +469,13 @@
 </li>
 <li>
 <span>
-<a href="#observatoryId">emobon-core:observatoryId</a>
+<a href="#observatoryId">core:observatoryId</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#observatorySampleId">emobon-core:observatorySampleId</a>
+<a href="#observatorySampleId">core:observatorySampleId</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 </li>
@@ -516,7 +516,7 @@
 <span>
 <span>
 <span>
-<a href="#broadBiome">emobon-core:broadBiome</a>
+<a href="#broadBiome">core:broadBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 <span>
@@ -535,7 +535,7 @@
 <span>
 <span>
 <span>
-<a href="#localBiome">emobon-core:localBiome</a>
+<a href="#localBiome">core:localBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 <span>
@@ -554,7 +554,7 @@
 <span>
 <span>
 <span>
-<a href="#geoLocation">emobon-core:geoLocation</a>
+<a href="#geoLocation">core:geoLocation</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 <span>
@@ -568,7 +568,7 @@
 <span>
 <span>
 <span>
-<a href="#sampleType">emobon-core:sampleType</a>
+<a href="#sampleType">core:sampleType</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 <span>
@@ -582,7 +582,7 @@
 <span>
 <span>
 <span>
-<a href="#marineRegion">emobon-core:marineRegion</a>
+<a href="#marineRegion">core:marineRegion</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 <span>
@@ -596,7 +596,7 @@
 <span>
 <span>
 <span>
-<a href="#observatoryId">emobon-core:observatoryId</a>
+<a href="#observatoryId">core:observatoryId</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 <span>
@@ -610,7 +610,7 @@
 <span>
 <span>
 <span>
-<a href="#observatorySampleId">emobon-core:observatorySampleId</a>
+<a href="#observatorySampleId">core:observatorySampleId</a>
 <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </span>
 <span>
@@ -642,7 +642,7 @@
 </th>
 <td>
 <span>
-<a href="#hasBiome">emobon-core:hasBiome</a>
+<a href="#hasBiome">core:hasBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </td>
@@ -672,7 +672,7 @@
 </th>
 <td>
 <span>
-<a href="#sampleType">emobon-core:sampleType</a>
+<a href="#sampleType">core:sampleType</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </td>
@@ -1005,7 +1005,7 @@
 </th>
 <td>
 <span>
-<a href="#geoLocation">emobon-core:geoLocation</a>
+<a href="#geoLocation">core:geoLocation</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </td>
@@ -1035,13 +1035,13 @@
 <ul>
 <li>
 <span>
-<a href="#broadBiome">emobon-core:broadBiome</a>
+<a href="#broadBiome">core:broadBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
 <li>
 <span>
-<a href="#localBiome">emobon-core:localBiome</a>
+<a href="#localBiome">core:localBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </li>
@@ -1054,7 +1054,7 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1089,7 +1089,7 @@
 </th>
 <td>
 <span>
-<a href="#hasBiome">emobon-core:hasBiome</a>
+<a href="#hasBiome">core:hasBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </td>
@@ -1113,7 +1113,7 @@
 </th>
 <td>
 <span>
-<a href="#hasBiome">emobon-core:hasBiome</a>
+<a href="#hasBiome">core:hasBiome</a>
 <sup class="sup-op" title="OWL Object Property">op</sup>
 </span>
 </td>
@@ -1161,7 +1161,7 @@
 </th>
 <td>
 <span>
-<a href="#SampleType">emobon-core:SampleType</a>
+<a href="#SampleType">core:SampleType</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1214,7 +1214,7 @@
 <ul>
 <li>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </li>
@@ -1267,7 +1267,7 @@
 <ul>
 <li>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </li>
@@ -1304,7 +1304,7 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1336,7 +1336,7 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1367,7 +1367,7 @@
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
 </th>
 <td>
-<a href="#Organization1">emobon-core:Organization</a>
+<a href="#Organization1">core:Organization</a>
 </td>
 </tr>
 <tr>
@@ -1416,7 +1416,7 @@
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1462,12 +1462,12 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1513,7 +1513,7 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1559,7 +1559,7 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1605,7 +1605,7 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1694,7 +1694,7 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">emobon-core:Observatory</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -1900,7 +1900,7 @@
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
 </th>
 <td>
-<a href="#Organization1">emobon-core:Organization</a>
+<a href="#Organization1">core:Organization</a>
 </td>
 </tr>
 <tr>
@@ -1970,6 +1970,10 @@
 <div id="namespaces">
 <h2>Namespaces</h2>
 <dl>
+<dt id="core">core</dt>
+<dd>
+<code>https://data.emobon.embrc.eu/ns/core#</code>
+</dd>
 <dt id="dc">dc</dt>
 <dd>
 <code>http://purl.org/dc/elements/1.1/</code>
@@ -1977,10 +1981,6 @@
 <dt id="dct">dct</dt>
 <dd>
 <code>http://purl.org/dc/terms/</code>
-</dd>
-<dt id="emobon-core">emobon-core</dt>
-<dd>
-<code>https://data.emobon.embrc.eu/ns/core#</code>
 </dd>
 <dt id="foaf">foaf</dt>
 <dd>
@@ -2227,13 +2227,13 @@
 </h4>
 <ul class="second">
 <li>
+<a href="#core">core</a>
+</li>
+<li>
 <a href="#dc">dc</a>
 </li>
 <li>
 <a href="#dct">dct</a>
-</li>
-<li>
-<a href="#emobon-core">emobon-core</a>
 </li>
 <li>
 <a href="#foaf">foaf</a>

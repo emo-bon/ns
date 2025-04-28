@@ -11,9 +11,10 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix qudt: <http://qudt.org/schema/qudt/>.
 
-@prefix emobon-core: <https://data.emobon.embrc.eu/ns/core#> .
-@prefix emobon-sampling: <https://data.emobon.embrc.eu/ns/sampling#> .
-@prefix emobon-sequence: <https://data.emobon.embrc.eu/ns/sequence#> .
+@prefix core: <https://data.emobon.embrc.eu/ns/core#> .
+@prefix sampling: <https://data.emobon.embrc.eu/ns/sampling#> .
+@prefix seq: <https://data.emobon.embrc.eu/ns/sequence#> .
+@prefix prod: <https://data.emobon.embrc.eu/ns/product#> .
 
 <https://data.emobon.embrc.eu/ns/core>
   a owl:Ontology ;
@@ -30,7 +31,7 @@
     <https://orcid.org/0000-0002-5911-1536>,
     <https://orcid.org/0000-0003-0663-5907>;
   dc:creator <https://www.embrc.eu> ;
-  vann:preferredNamespacePrefix "emobon-core" ;
+  vann:preferredNamespacePrefix "core" ;
   vann:preferredNamespaceUri    "https://data.emobon.embrc.eu/ns/core#" .
 
 
