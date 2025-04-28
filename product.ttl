@@ -15,7 +15,7 @@
 @prefix core: <{{baseuri}}/core#> .
 @prefix sampling: <{{baseuri}}/sampling#> .
 @prefix seq: <{{baseuri}}/sequence#> .
-@prefic prod: <{{baseuri}}/{{name}}#> .
+@prefix prod: <{{baseuri}}/{{name}}#> .
 
 <{{baseuri}}/{{name}}>
   a owl:Ontology ;
