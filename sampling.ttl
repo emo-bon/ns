@@ -182,7 +182,7 @@
 <https://data.emobon.embrc.eu/ns/sampling#minSamplingDepth>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "Measument of the sampling depth of the water column in meters"@en ;
+    rdfs:comment        "The upper boundary (in meters) of the depth range where a sampling activity took place."@en ;
     rdfs:label          "Sampling depth of water column"@en ;
     rdfs:domain         sosa:Sampling;
     rdfs:range          qudt:QuantityValue ;
@@ -191,7 +191,7 @@
 <https://data.emobon.embrc.eu/ns/sampling#maxSamplingDepth>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "Measument of the maximum sampling depth of the water column in meters"@en ;
+    rdfs:comment        "The lower boundary (in meters) of the depth range where a sampling activity took place."@en ;
     rdfs:label          "Max sampling depth of water column"@en ;
     rdfs:domain         sosa:Sampling;
     rdfs:range          qudt:QuantityValue ;
@@ -201,7 +201,7 @@
 <https://data.emobon.embrc.eu/ns/sampling#minSampleDepth>
     a                   owl:DatatypeProperty ; 
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "Measument of the minimum sample depth of the water column in meters"@en ;
+    rdfs:comment        "The upper boundary (in meters) of the depth range from which a sample was taken in the water column."@en ;
     rdfs:label          "Min sampling depth of water column"@en ;
     rdfs:domain         sosa:Sample;
     rdfs:range          qudt:QuantityValue ;
@@ -210,7 +210,7 @@
 <https://data.emobon.embrc.eu/ns/sampling#maxSampleDepth>
     a                   owl:DatatypeProperty ; 
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:comment        "Measument of the maximum sample depth of the water column in meters"@en ;
+    rdfs:comment        "The lower boundary (in meters) of the depth range from which a sample was taken in the water column."@en ;
     rdfs:label          "Max sampling depth of water column"@en ;
     rdfs:domain         sosa:Sample;
     rdfs:range          qudt:QuantityValue ;

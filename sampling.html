@@ -10,20 +10,6 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://www.embrc.eu",
-    "https://schema.org/name": [
-      {
-        "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.embrc.eu"
-      }
-    ]
-  },
-  {
     "@id": "https://www.vliz.be/",
     "https://schema.org/name": [
       {
@@ -78,6 +64,20 @@
     "https://schema.org/publisher": [
       {
         "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.embrc.eu",
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "European Marine Biological Resource Centre"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.embrc.eu"
       }
     ]
   }
@@ -436,12 +436,12 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -487,12 +487,12 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -538,12 +538,12 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -581,7 +581,7 @@
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>Measument of the sampling depth of the water column in meters</p></td>
+<td><p>The upper boundary (in meters) of the depth range where a sampling activity took place.</p></td>
 </tr>
 <tr>
 <th>
@@ -624,7 +624,7 @@
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>Measument of the maximum sampling depth of the water column in meters</p></td>
+<td><p>The lower boundary (in meters) of the depth range where a sampling activity took place.</p></td>
 </tr>
 <tr>
 <th>
@@ -667,7 +667,7 @@
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>Measument of the minimum sample depth of the water column in meters</p></td>
+<td><p>The upper boundary (in meters) of the depth range from which a sample was taken in the water column.</p></td>
 </tr>
 <tr>
 <th>
@@ -710,7 +710,7 @@
 <th>
 <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
 </th>
-<td><p>Measument of the maximum sample depth of the water column in meters</p></td>
+<td><p>The lower boundary (in meters) of the depth range from which a sample was taken in the water column.</p></td>
 </tr>
 <tr>
 <th>
