@@ -10,6 +10,38 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
+    "@id": "https://www.embrc.eu",
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "European Marine Biological Resource Centre"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.embrc.eu"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
     "@id": "https://data.emobon.embrc.eu/ns/product",
     "@type": [
       "https://schema.org/DefinedTermSet"
@@ -46,38 +78,6 @@
     "https://schema.org/publisher": [
       {
         "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
-      {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.embrc.eu",
-    "https://schema.org/name": [
-      {
-        "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.embrc.eu"
       }
     ]
   }
@@ -385,12 +385,12 @@
 </th>
 <td>
 <span>
-<a href="#TaxonomicAnnotation">Taxonomic Annotation</a>
+<a href="#FunctionalAnnotation">Functional Annotation</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="#FunctionalAnnotation">Functional Annotation</a>
+<a href="#TaxonomicAnnotation">Taxonomic Annotation</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
