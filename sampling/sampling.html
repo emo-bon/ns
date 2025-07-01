@@ -10,24 +10,6 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
-      {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
     "@id": "https://data.emobon.embrc.eu/ns/sampling",
     "@type": [
       "https://schema.org/DefinedTermSet"
@@ -62,6 +44,24 @@
       }
     ],
     "https://schema.org/publisher": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
       {
         "@id": "https://www.vliz.be/"
       }
@@ -538,12 +538,12 @@
 </th>
 <td>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="http://www.w3.org/ns/sosa/Sample">sosa:Sample</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
@@ -559,7 +559,7 @@
 </table>
 </div>
 <div class="property entity" id="minSamplingDepth">
-<h3>Sampling depth of water column
+<h3>Min sampling depth
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </h3>
 <table>
@@ -602,7 +602,7 @@
 </table>
 </div>
 <div class="property entity" id="maxSamplingDepth">
-<h3>Max sampling depth of water column
+<h3>Max sampling depth
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </h3>
 <table>
@@ -645,7 +645,7 @@
 </table>
 </div>
 <div class="property entity" id="minSampleDepth">
-<h3>Min sampling depth of water column
+<h3>Min sample depth
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </h3>
 <table>
@@ -688,7 +688,7 @@
 </table>
 </div>
 <div class="property entity" id="maxSampleDepth">
-<h3>Max sampling depth of water column
+<h3>Max sample depth
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </h3>
 <table>
@@ -1433,16 +1433,16 @@
 <a href="#bioCommunity">Biological community</a>
 </li>
 <li>
-<a href="#minSamplingDepth">Sampling depth of water column</a>
+<a href="#minSamplingDepth">Min sampling depth</a>
 </li>
 <li>
-<a href="#maxSamplingDepth">Max sampling depth of water column</a>
+<a href="#maxSamplingDepth">Max sampling depth</a>
 </li>
 <li>
-<a href="#minSampleDepth">Min sampling depth of water column</a>
+<a href="#minSampleDepth">Min sample depth</a>
 </li>
 <li>
-<a href="#maxSampleDepth">Max sampling depth of water column</a>
+<a href="#maxSampleDepth">Max sample depth</a>
 </li>
 <li>
 <a href="#tidalStage">Tidal stage</a>
