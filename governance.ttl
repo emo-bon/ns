@@ -1,0 +1,144 @@
+@prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
+@prefix gov: <{{baseuri}}/{{name}}#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+
+
+<{{baseuri}}/{{name}}>
+    a owl:Ontology;
+    rdfs:label       "emobon governance-ontology"@en ;
+    rdfs:comment     "EMO-BON governance ontology for describing TODO"@en ;
+    dc:issued        "2022-12-07"^^xsd:date ;
+    dc:modified      "2022-12-07"^^xsd:date ;
+    dc:license       <https://creativecommons.org/licenses/by/4.0/> ;
+    dc:creator
+    [
+        schema:name         "VLIZ Open Science team" ;
+        schema:email        <mailto:opsci@vliz.org> ;
+	      schema:affiliation  <https://www.vliz.be/> ;
+    ] ;
+    dc:contributor
+    [
+        schema:name         "Katrina Exter" ;
+        schema:identifier   <https://orcid.org/0000-0002-5911-1536> ;
+        schema:email        <mailto:katrina.exter@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ],
+    [
+        schema:name         "Marc Portier" ;
+        schema:identifier   <https://orcid.org/0000-0002-9648-6484> ;
+        schema:email        <mailto:marc.portier@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ],
+    [
+        schema:name         "Cedric Decruw" ;
+        schema:identifier   <https://orcid.org/0000-0001-6387-5988> ;
+        schema:email        <mailto:cedric.decruw@vliz.be> ;
+        schema:affiliation  <https://www.vliz.be/> ;
+    ] ;
+    vann:preferredNamespacePrefix "da" ;
+    vann:preferredNamespaceUri    "{{baseuri}}/{{name}}#" .
+
+
+<https://www.vliz.be/>
+  a schema:Organization ;
+  schema:name   "Vlaams Instituut voor de Zee"@nl ;
+  schema:name   "Flanders Marine Institute"@en ;
+  schema:url    <https://www.vliz.be/> .
+
+
+### classes ###
+
+gov:Sop
+  a                     owl:Class ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          """a set of written instructions that describes the step-by-step process that must be taken to properly perform a routine activity."""@en ;
+  rdfs:label            "System operating procedure"@en ;
+  rdfs:subclassof	      ro:CreativeWork .
+
+gov:MaterialSample       
+  a                     owl:Class ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          """a small quantity of a material or product that represents the whole."""@en ;
+  rdfs:label            "Material sample"@en ;
+  rdfs:subclassof	      schema:Thing .
+
+gov:MaterialReplicat
+  a                     owl:Class ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          """an exact copy or model of something, especially one on a smaller scale. In this case a material sample"""@en ;
+  rdfs:label            "Material sample"@en ;
+  rdfs:subclassof	      schema:Thing .
+
+### predicates ###
+
+gov:sampleSize
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "Indicates the size of a material replicat"@en ;
+  rdfs:label            "Sample size"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            gov:MaterialReplicat .
+
+gov:sampleType
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "Indicates the type of a material sample"@en ;
+  rdfs:label            "Sample type"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            gov:MaterialSample .
+
+gov:sop
+  a                     skos:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          """a set of written instructions that describes the step-by-step process that must be taken to properly perform a routine activity."""@en ;
+  rdfs:label            "System operating procedure"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            gov:MaterialSample .
+
+gov:hardSedementType
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "a naturally occurring material that is broken down by processes of weathering and erosion that is of a hard type"@en ;
+  rdfs:label            "Hard sediment type"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            gov:MaterialSample .
+
+gov:softSedementType
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "a naturally occurring material that is broken down by processes of weathering and erosion that is of a soft type"@en ;
+  rdfs:label            "SOft sediment type"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            gov:MaterialSample .
+
+gov:waterType
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "water sample"@en ;
+  rdfs:label            "water sample type"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            gov:MaterialSample .
+
+gov:measurementType
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "type of measurement"@en ;
+  rdfs:label            "Measurement type"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            schema:Event .
+
+gov:temperatureType
+  a                     owl:ObjectProperty ;
+  rdfs:isDefinedBy      <{{baseuri}}/{{name}}>;
+  rdfs:comment          "type of temperature measurement"@en ;
+  rdfs:label            "Temperature type"@en ;
+  rdfs:domain           schema:Thing ;
+  rdfs:range            schema:Event . #TODO don't know how to do this
