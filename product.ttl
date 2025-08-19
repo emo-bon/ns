@@ -186,21 +186,3 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         skos:definition        "functional annotation representing a EGGNOG term"@en ;
         skos:altLabel          "EGGNOG"
         .
-
-<https://data.emobon.embrc.eu/ns/product#ssu>
-        rdf:type               skos:Concept ;
-        dc:date                "2024-04-11" ;
-        dc:identifier          "SSU" ;
-        skos:prefLabel         "SSU"@en ;
-        skos:definition        "Small subunit ribosomal RNA gene (SSU)"@en ;
-        skos:altLabel          "SSU"
-        .
-
-<https://data.emobon.embrc.eu/ns/product#lsu>
-        rdf:type               skos:Concept ;
-        dc:date                "2024-04-11" ;
-        dc:identifier          "LSU" ;
-        skos:prefLabel         "LSU"@en ;
-        skos:definition        "Large subunit ribosomal RNA gene (LSU)"@en ;
-        skos:altLabel          "LSU"
-        .
