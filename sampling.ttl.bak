@@ -68,7 +68,7 @@
 
 
 #### PROPERTIES Sample ####
-<{{baseuri}}/{{name}}#origEmobonId
+<{{baseuri}}/{{name}}#origEmobonId>
     a                     owl:DatatypeProperty ;
     rdfs:isDefinedBy      <{{baseuri}}/{{name}}> ;
     rdfs:comment          "The original EMOBON assigned identifier as used for the sample material."@en ;
