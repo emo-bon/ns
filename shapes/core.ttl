@@ -1,0 +1,63 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix core: <https://data.emobon.embrc.eu/ns/core#> .
+@prefix emo: <http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#> .
+@prefix ex: <http://example.org/ns#> .
+
+########################################
+# SHACL shape for schema:Organization
+########################################
+
+ex:SchemaOrgOrganizationShape
+  a sh:NodeShape ;
+  sh:targetClass schema:Organization ;
+
+  # Cardinality constraint on address
+  sh:property [
+    sh:path schema:address ;
+    sh:class schema:PostalAddress ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # Cardinality constraint on legalName
+  sh:property [
+    sh:path schema:legalName ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+.
+
+########################################
+# SHACL shape for EMO-BON Organization
+########################################
+
+ex:EmoBonOrganizationShape
+  a sh:NodeShape ;
+  sh:targetClass emo:Organization ;
+
+  # Inherits Schema.org constraints (optional to repeat, SHACL doesn't do class inheritance automatically)
+  sh:property [
+    sh:path schema:address ;
+    sh:class schema:PostalAddress ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+
+  sh:property [
+    sh:path schema:legalName ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+
+  # EDMO ID required
+  sh:property [
+    sh:path emo:edmoId ;
+    sh:datatype xsd:positiveInteger ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+  ] ;
+.
