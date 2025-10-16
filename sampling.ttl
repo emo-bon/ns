@@ -310,6 +310,15 @@
     rdfs:range          xsd:string ; 
 .
 
+<{{baseuri}}/{{name}}#filterSize>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "The mesh/pore/sieve size used to filter/sieve the sample in micrometers (μm). Materials larger than the size threshold are excluded from the sample."@en ;
+    rdfs:label          "filter size"@en ;
+    rdfs:domain         sosa:Sample ;
+    rdfs:range          qudt:QuantityValue ; 
+.
+
 <{{baseuri}}/{{name}}#lowerFilterSize>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
@@ -328,4 +337,40 @@
     rdfs:domain         sosa:Sample ;
     rdfs:range          qudt:QuantityValue ; 
     owl:seeAlse        <http://vocab.nerc.ac.uk/collection/P01/current/PRSZSPUP/> ;
+.
+
+<{{baseuri}}/{{name}}#preservative>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "The preservative used after processing during the sampling event"@en ;
+    rdfs:label          "preservative"@en ;
+    rdfs:domain         sosa:Sampling ;
+    rdfs:range          xsd:string ; 
+.
+
+<{{baseuri}}/{{name}}#fractionCollected>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "The ARMS fraction that was collected, can be either sessile fraction, motile fraction or control/blank"@en ;
+    rdfs:label          "Collected ARMS fraction"@en ;
+    rdfs:domain         sosa:Sampling ;
+    rdfs:range          xsd:string ; 
+.
+
+<{{baseuri}}/{{name}}#armsCrateCoverUsed>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "Indicates if a cover for the ARMS crate was used during retrieval."@en ;
+    rdfs:label          "ARMS crate cover used"@en ;
+    rdfs:domain         sosa:Sampling ;
+    rdfs:range          xsd:boolean ; 
+.
+
+<{{baseuri}}/{{name}}#imagesInPlutoF>
+    a                   owl:DatatypeProperty ;
+    rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:comment        "Indicates if the images from an ARMS sampling event are stored in PlutoF"@en ;
+    rdfs:label          "Images in PlutoF"@en ;
+    rdfs:domain         sosa:Sampling ;
+    rdfs:range          xsd:boolean ; 
 .
