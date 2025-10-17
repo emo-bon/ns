@@ -157,28 +157,14 @@ schema:Thing
 
 schema:Organization
   a owl:Class ;
-  rdfs:subClassOf schema:Thing, [
-    a owl:Restriction ;
-    owl:onProperty schema:address ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onClass schema:PostalAddress ;
-  ], [
-    a owl:Restriction ;
-    owl:onProperty schema:legalName ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:string ;
-  ] ;
+  rdfs:subClassOf schema:Thing ;
 .
 
 <http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#Organization>
   a owl:Class ;
-  rdfs:subClassOf schema:Organization, [
-    a owl:Restriction ;
-    owl:onProperty <http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#edmoId> ;
-    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    owl:onDataRange xsd:positiveInteger ;
-  ] ;
+  rdfs:subClassOf schema:Organization ;
 .
+
 
 schema:PostalAddress
   a owl:Class ;

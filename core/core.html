@@ -24,6 +24,47 @@
     ]
   },
   {
+    "@id": "https://orcid.org/0000-0002-5911-1536",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.vliz.be"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:katrina.exter@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0002-5911-1536"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Katrina Exter"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
     "@id": "https://data.emobon.embrc.eu/ns/core",
     "@type": [
       "https://schema.org/DefinedTermSet"
@@ -75,24 +116,6 @@
     ]
   },
   {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
-      {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
     "@id": "https://orcid.org/0000-0003-0663-5907",
     "https://schema.org/affiliation": [
       {
@@ -135,29 +158,6 @@
     "https://schema.org/name": [
       {
         "@value": "Henriette Harmse"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0002-5911-1536",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:katrina.exter@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0002-5911-1536"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Katrina Exter"
       }
     ]
   }
@@ -714,43 +714,6 @@
 </tr>
 <tr>
 <th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
-</th>
-<td>
-<ul>
-<li>
-<span>
-<span>
-<span>
-<a href="https://schema.org/address">address</a>
-<sup class="sup-op" title="OWL Object Property">op</sup>
-</span>
-<span>
-<span class="cardinality">exactly</span>
-<span>1</span>
-</span><br/>
-</span>
-</span>
-</li>
-<li>
-<span>
-<span>
-<span>
-<a href="https://schema.org/legalName">legalName</a>
-<sup class="sup-dp" title="OWL Datatype Property">dp</sup>
-</span>
-<span>
-<span class="cardinality">exactly</span>
-<span>1</span>
-</span><br/>
-</span>
-</span>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<th>
 <a class="hover_property" href="https://w3id.org/profile/ontdoc/superClassOf" title="Inverse of RDFS' subClassOf. Defined in Ontology Documentation Profile">Super Class Of</a>
 </th>
 <td>
@@ -781,22 +744,6 @@
 <span>
 <a href="https://schema.org/Organization">schema:Organization</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
-</span>
-</td>
-</tr>
-<tr>
-<th>
-<a class="hover_property" href="https://w3id.org/profile/ontdoc/restriction" title="Convenience property for things that subclass owl:Restriction. Defined in Ontology Documentation Profile">Restriction</a>
-</th>
-<td>
-<span>
-<span>
-<a href="http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#edmoId">http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#edmoId</a>
-<span>
-<span class="cardinality">exactly</span>
-<span>1</span>
-</span><br/>
-</span>
 </span>
 </td>
 </tr>
@@ -1411,12 +1358,12 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
