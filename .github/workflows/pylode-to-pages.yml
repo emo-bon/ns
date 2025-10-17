@@ -20,6 +20,7 @@ jobs:
         with:
           baseuri: https://data.emobon.embrc.eu/ns
           outfolder: ./publish
+          ignore_folders: shapes
 
       - name: Show contents
         run: find -L ./publish/ -type f  | grep -v "\./\.git"
