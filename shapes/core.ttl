@@ -1,15 +1,23 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix core: <https://data.emobon.embrc.eu/ns/core#> .
-@prefix emo: <http://www.embrc.eu/emo-bon/EmoBonOntology.rdf#> .
-@prefix ex: <http://example.org/ns#> .
+@prefix emo: <https://data.emobon.embrc.eu/ns/> .
+
+emo:EmobonCoreProfile a prof:Profile ;
+    prof:isProfileOf <https://data.emobon.embrc.eu/ns/> ;
+    dct:title "The EMO-BON Core Profile" ;
+    dct:description "SHACL constraints for implementation of EMO-BON Core ontology." ;
+    prof:hasResource emo:SchemaOrgOrganizationShape , emo:EmoBonOrganizationShape .
+
 
 ########################################
 # SHACL shape for schema:Organization
 ########################################
 
-ex:SchemaOrgOrganizationShape
+emo:SchemaOrgOrganizationShape
   a sh:NodeShape ;
   sh:targetClass schema:Organization ;
 
@@ -34,7 +42,7 @@ ex:SchemaOrgOrganizationShape
 # SHACL shape for EMO-BON Organization
 ########################################
 
-ex:EmoBonOrganizationShape
+emo:EmoBonOrganizationShape
   a sh:NodeShape ;
   sh:targetClass emo:Organization ;
 
