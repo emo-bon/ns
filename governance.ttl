@@ -16,7 +16,7 @@
     rdfs:label       "emobon governance-ontology"@en ;
     rdfs:comment     "EMO-BON governance ontology for describing TODO"@en ;
     dc:issued        "2022-12-07"^^xsd:date ;
-    dc:modified      "2022-12-07"^^xsd:date ;
+    dc:modified      "2025-10-21"^^xsd:date ;
     dc:license       <https://creativecommons.org/licenses/by/4.0/> ;
     dc:creator
     [

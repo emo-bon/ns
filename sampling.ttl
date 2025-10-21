@@ -24,7 +24,7 @@
   rdfs:comment   "The Sampling EMO-BON ontology provides definitions for the sampling classes and properties used in EMO-BON data."@en ;
   dc:publisher   <https://www.vliz.be/> ;
   dct:issued      "2023-03-17"^^xsd:date ;
-  dct:modified    "2023-07-26"^^xsd:date ;
+  dct:modified    "2025-10-21"^^xsd:date ;
   dc:license     <https://creativecommons.org/licenses/by/4.0/> ;
   dc:creator <https://www.embrc.eu> ;
   vann:preferredNamespacePrefix "sampling" ;

@@ -10,6 +10,29 @@
 <script id="schema.org" type="application/ld+json">
 [
   {
+    "@id": "https://orcid.org/0000-0001-7251-9504",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.embrc.eu"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:henriette007@ebi.ac.uk"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0001-7251-9504"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Henriette Harmse"
+      }
+    ]
+  },
+  {
     "@id": "https://www.embrc.eu",
     "https://schema.org/name": [
       {
@@ -20,29 +43,6 @@
     "https://schema.org/url": [
       {
         "@id": "https://www.embrc.eu"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0003-0663-5907",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:laurian.van.maldeghem@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0003-0663-5907"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Laurian Van Maldeghem"
       }
     ]
   },
@@ -76,7 +76,7 @@
     "https://schema.org/dateModified": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#date",
-        "@value": "2023-07-26"
+        "@value": "2025-10-21"
       }
     ],
     "https://schema.org/description": [
@@ -94,47 +94,6 @@
     "https://schema.org/publisher": [
       {
         "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
-      {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
-    "@id": "https://orcid.org/0000-0001-7251-9504",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.embrc.eu"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:henriette007@ebi.ac.uk"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0001-7251-9504"
-      }
-    ],
-    "https://schema.org/name": [
-      {
-        "@value": "Henriette Harmse"
       }
     ]
   },
@@ -158,6 +117,47 @@
     "https://schema.org/name": [
       {
         "@value": "Katrina Exter"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
+    "@id": "https://orcid.org/0000-0003-0663-5907",
+    "https://schema.org/affiliation": [
+      {
+        "@id": "https://www.vliz.be"
+      }
+    ],
+    "https://schema.org/email": [
+      {
+        "@id": "mailto:laurian.van.maldeghem@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0003-0663-5907"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Laurian Van Maldeghem"
       }
     ]
   }
@@ -310,7 +310,7 @@
 <dt>
 <a class="hover_property" href="http://purl.org/dc/terms/modified" title="Date on which the resource was changed. Defined in DCMI Metadata Terms">Date Modified</a>
 </dt>
-<dd><p>2023-07-26</p></dd>
+<dd><p>2025-10-21</p></dd>
 </div>
 <div>
 <dt>
@@ -1358,12 +1358,12 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>
