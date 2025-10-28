@@ -3,20 +3,20 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 
-<https://data.emobon.embrc.eu/ns/unit#"Cells_Per_Sampleunit">
+<https://data.emobon.embrc.eu/ns/unit#cells_per_sampleunit>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          " "cells_per_sampleUnit"" ;
-        skos:prefLabel         " "cells_per_sampleUnit""@en ;
-        skos:definition        " "Total number of cells per gram"@en ;
-        skos:altLabel          " volume"
+        dc:identifier          ' "cells_per_sampleUnit"'@und ;
+        skos:prefLabel         ' "cells_per_sampleUnit"'@en ;
+        skos:definition        ' "Total number of cells per gram'@en ;
+        skos:altLabel          ' volume'@en
         .
 
-<https://data.emobon.embrc.eu/ns/unit#"Micrograms_Cubicmetre_Day">
+<https://data.emobon.embrc.eu/ns/unit#micrograms_cubicmetre_day>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-25" ;
-        dc:identifier          " "micrograms_cubicmetre_day"" ;
-        skos:prefLabel         " "micrograms_cubicmetre_day""@en ;
-        skos:definition        " "Micrograms per cubic metre per day""@en ;
-        skos:altLabel          " "ug/m^3/d""
+        dc:identifier          ' "micrograms_cubicmetre_day"'@und ;
+        skos:prefLabel         ' "micrograms_cubicmetre_day"'@en ;
+        skos:definition        ' "Micrograms per cubic metre per day"'@en ;
+        skos:altLabel          ' "ug/m^3/d"'@en
         .
