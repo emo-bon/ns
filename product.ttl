@@ -60,6 +60,7 @@ prod:Product
     rdfs:comment "A functional annotation, which is a type of analysis product, resulting from a sequence analysis."@en ; 
     rdfs:label "Functional Annotation" ; 
     rdfs:subClassOf prod:Product ; 
+    rdfs:seeAlso <http://edamontology.org/operation_3672> ;
 .
 
 <https://data.emobon.embrc.eu/ns/product#TaxonomicAnnotation>
@@ -110,6 +111,7 @@ prod:Product
     rdfs:label          "OTU identifier"@en ;
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:integer ;
+    rdfs:seeAlso        <http://purl.dataone.org/odo/ECSO_00003085> ; 
 .
 
 <https://data.emobon.embrc.eu/ns/product#rRNA>
@@ -156,7 +158,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         dc:date                "2024-04-11" ;
         dc:identifier          'InterPro'@und ;
         skos:prefLabel         'InterPro'@en ;
-        skos:definition        'functional annotation representing an InterPro protein family'@en ;
+        skos:definition        'functional annotation representing an InterPro (InterProScan summary protein family) term'@en ;
         skos:altLabel          'InterPro'@en
         .
 
@@ -165,7 +167,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         dc:date                "2024-04-11" ;
         dc:identifier          'KEGG'@und ;
         skos:prefLabel         'KEGG'@en ;
-        skos:definition        'functional annotation representing a KEGG orthology term'@en ;
+        skos:definition        'functional annotation representing a KEGG ontology term'@en ;
         skos:altLabel          'KEGG'@en
         .
 
@@ -174,7 +176,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         dc:date                "2024-04-11" ;
         dc:identifier          'PFAM'@und ;
         skos:prefLabel         'PFAM'@en ;
-        skos:definition        'functional annotation representing a PFAM protein family'@en ;
+        skos:definition        'functional annotation representing a PFAM (protein family) term'@en ;
         skos:altLabel          'PFAM'@en
         .
 
@@ -183,6 +185,6 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         dc:date                "2024-04-11" ;
         dc:identifier          'EGGNOG'@und ;
         skos:prefLabel         'EGGNOG'@en ;
-        skos:definition        'functional annotation representing a EGGNOG term'@en ;
+        skos:definition        'functional annotation representing a EGGNOG (Orthology relationships, functional annotation, and gene evolutionary histories) term'@en ;
         skos:altLabel          'EGGNOG'@en
         .

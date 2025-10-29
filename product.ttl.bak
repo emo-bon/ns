@@ -60,6 +60,7 @@ prod:Product
     rdfs:comment "A functional annotation, which is a type of analysis product, resulting from a sequence analysis."@en ; 
     rdfs:label "Functional Annotation" ; 
     rdfs:subClassOf prod:Product ; 
+    rdfs:seeAlso <http://edamontology.org/operation_3672> ;
 .
 
 <{{baseuri}}/{{name}}#TaxonomicAnnotation>
@@ -110,6 +111,7 @@ prod:Product
     rdfs:label          "OTU identifier"@en ;
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:integer ;
+    rdfs:seeAlso        <http://purl.dataone.org/odo/ECSO_00003085> ; 
 .
 
 <{{baseuri}}/{{name}}#rRNA>
