@@ -1,8 +1,8 @@
 "ID","DATE","PREFLABEL_EN","DEFINITION_EN","ALTLABEL_EN","BROADER","NARROWER"
-1, 2025-03-13, "biomass", "The amount of biomass", "biomass",,
-2, 2025-03-13, "chem_administration", "Chemical compounds administered to the host or site where sampling occurred", "Chemical administration",,
-4, 2025-03-13, "sal_sampledepth", "Salinity measured at the depth of the sampling", "Salinity at Sample depth","http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/",
-5, 2025-03-13, "temp_sampledepth", "Temperature measured at the depth of the sampling", "Temperature at Sample depth","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
-6, 2025-03-13, "sal_surface", "Salinity measured at the water surface", "Salinity at surface","http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/",
-7, 2025-03-13, "temp_surface", "Temperature measured at the water surface", "Temperature at surface","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
-8, 2025-03-13, "sulfide_conc", "Concentration of sulfide in the sample", "Sulfide concentration",,"http://vocab.nerc.ac.uk/collection/P01/current/H2SXZZXX/"
+"biomass", 2025-03-13, "biomass", "The amount of biomass", "biomass",,
+"chem administration", 2025-03-13, "chem administration", "Chemical compounds administered to the host or site where sampling occurred", "Chemical administration",,
+"sal sampledepth", 2025-03-13, "sal sampledepth", "Salinity measured at the depth of the sampling", "Salinity at Sample depth","http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/",
+"temp sampledepth", 2025-03-13, "temp sampledepth", "Temperature measured at the depth of the sampling", "Temperature at Sample depth","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
+"sal surface", 2025-03-13, "sal surface", "Salinity measured at the water surface", "Salinity at surface","http://vocab.nerc.ac.uk/collection/A05/current/EV_SALIN/",
+"temp surface", 2025-03-13, "temp surface", "Temperature measured at the water surface", "Temperature at surface","http://vocab.nerc.ac.uk/collection/P02/current/TEMP/",
+"sulfide conc", 2025-03-13, "sulfide conc", "Concentration of sulfide in the sample", "Sulfide concentration",,"http://vocab.nerc.ac.uk/collection/P01/current/H2SXZZXX/"
