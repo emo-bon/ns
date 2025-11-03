@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
       - name: Build Pages
-        uses: vliz-be-opsci/pylode-to-pages@v0.1.47
+        uses: vliz-be-opsci/pylode-to-pages@v0.1.48
         with:
           baseuri: https://data.emobon.embrc.eu/ns
           outfolder: ./publish
