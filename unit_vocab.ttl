@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/unit#1>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '1'@und ;
+        skos:prefLabel         ' "cells_per_sampleUnit"'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/unit#2>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-25" ;
+        dc:identifier          '2'@und ;
+        skos:prefLabel         ' "micrograms_cubicmetre_day"'@en ;
+        .

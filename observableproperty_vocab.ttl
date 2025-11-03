@@ -1,0 +1,53 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/observableproperty#1>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '1'@und ;
+        skos:prefLabel         ' "biomass"'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/observableproperty#2>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '2'@und ;
+        skos:prefLabel         ' "chem_administration"'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/observableproperty#4>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '4'@und ;
+        skos:prefLabel         ' "sal_sampledepth"'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/observableproperty#5>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '5'@und ;
+        skos:prefLabel         ' "temp_sampledepth"'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/observableproperty#6>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '6'@und ;
+        skos:prefLabel         ' "sal_surface"'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/observableproperty#7>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '7'@und ;
+        skos:prefLabel         ' "temp_surface"'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/observableproperty#8>
+        rdf:type               skos:Concept ;
+        dc:date                " 2025-03-13" ;
+        dc:identifier          '8'@und ;
+        skos:prefLabel         ' "sulfide_conc"'@en ;
+        .
