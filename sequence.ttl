@@ -395,4 +395,98 @@
     rdfs:label          "multiplex identifiers"@en ;
     rdfs:domain         <https://data.emobon.embrc.eu/ns/sequence#SequencingRun> ;
     rdfs:range          xsd:string ; 
-.
+.PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/sequence#metagenomic>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'METAGENOMIC'@und ;
+        skos:prefLabel         'METAGENOMIC'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#genomic>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'GENOMIC'@und ;
+        skos:prefLabel         'GENOMIC'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#genomic SINGLE CELL>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'GENOMIC SINGLE CELL'@und ;
+        skos:prefLabel         'GENOMIC SINGLE CELL'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#transcriptomic>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'TRANSCRIPTOMIC'@und ;
+        skos:prefLabel         'TRANSCRIPTOMIC'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#transcriptomic SINGLE CELL>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'TRANSCRIPTOMIC SINGLE CELL'@und ;
+        skos:prefLabel         'TRANSCRIPTOMIC SINGLE CELL'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#metatranscriptomic>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'METATRANSCRIPTOMIC'@und ;
+        skos:prefLabel         'METATRANSCRIPTOMIC'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#synthetic>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'SYNTHETIC'@und ;
+        skos:prefLabel         'SYNTHETIC'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#viralRna>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'VIRAL RNA'@und ;
+        skos:prefLabel         'VIRAL RNA'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#other>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'OTHER'@und ;
+        skos:prefLabel         'OTHER'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#manual>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'manual'@und ;
+        skos:prefLabel         'manual'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#test>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'test'@und ;
+        skos:prefLabel         'test'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#processing>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'processing'@und ;
+        skos:prefLabel         'processing'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/sequence#done>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-08-30" ;
+        dc:identifier          'done'@und ;
+        skos:prefLabel         'done'@en ;
+        .

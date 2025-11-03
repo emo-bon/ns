@@ -130,4 +130,49 @@ prod:Product
     rdfs:label          "Genetic Marker"@en ;
     rdfs:domain         prod:TaxonomicAnnotation ;
     rdfs:range          xsd:string ;
-.
+.PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+
+<https://data.emobon.embrc.eu/ns/product#go>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          'GO'@und ;
+        skos:prefLabel         'GO'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/product#go_SLIM>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          'GO_SLIM'@und ;
+        skos:prefLabel         'GO SLIM'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/product#interpro>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          'InterPro'@und ;
+        skos:prefLabel         'InterPro'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/product#kegg>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          'KEGG'@und ;
+        skos:prefLabel         'KEGG'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/product#pfam>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          'PFAM'@und ;
+        skos:prefLabel         'PFAM'@en ;
+        .
+
+<https://data.emobon.embrc.eu/ns/product#eggnog>
+        rdf:type               skos:Concept ;
+        dc:date                "2024-04-11" ;
+        dc:identifier          'EGGNOG'@und ;
+        skos:prefLabel         'EGGNOG'@en ;
+        .

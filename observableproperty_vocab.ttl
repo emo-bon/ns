@@ -3,51 +3,51 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 
-<https://data.emobon.embrc.eu/ns/observableproperty#1>
+<https://data.emobon.embrc.eu/ns/observableproperty#biomass>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          '1'@und ;
+        dc:identifier          'biomass'@und ;
         skos:prefLabel         ' "biomass"'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/observableproperty#2>
+<https://data.emobon.embrc.eu/ns/observableproperty#chemAdministration>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          '2'@und ;
-        skos:prefLabel         ' "chem_administration"'@en ;
+        dc:identifier          'chem administration'@und ;
+        skos:prefLabel         ' "chem administration"'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/observableproperty#4>
+<https://data.emobon.embrc.eu/ns/observableproperty#salSampledepth>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          '4'@und ;
-        skos:prefLabel         ' "sal_sampledepth"'@en ;
+        dc:identifier          'sal sampledepth'@und ;
+        skos:prefLabel         ' "sal sampledepth"'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/observableproperty#5>
+<https://data.emobon.embrc.eu/ns/observableproperty#tempSampledepth>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          '5'@und ;
-        skos:prefLabel         ' "temp_sampledepth"'@en ;
+        dc:identifier          'temp sampledepth'@und ;
+        skos:prefLabel         ' "temp sampledepth"'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/observableproperty#6>
+<https://data.emobon.embrc.eu/ns/observableproperty#salSurface>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          '6'@und ;
-        skos:prefLabel         ' "sal_surface"'@en ;
+        dc:identifier          'sal surface'@und ;
+        skos:prefLabel         ' "sal surface"'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/observableproperty#7>
+<https://data.emobon.embrc.eu/ns/observableproperty#tempSurface>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          '7'@und ;
-        skos:prefLabel         ' "temp_surface"'@en ;
+        dc:identifier          'temp surface'@und ;
+        skos:prefLabel         ' "temp surface"'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/observableproperty#8>
+<https://data.emobon.embrc.eu/ns/observableproperty#sulfideConc>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
-        dc:identifier          '8'@und ;
-        skos:prefLabel         ' "sulfide_conc"'@en ;
+        dc:identifier          'sulfide conc'@und ;
+        skos:prefLabel         ' "sulfide conc"'@en ;
         .

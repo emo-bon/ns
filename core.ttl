@@ -402,37 +402,37 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 
-<https://data.emobon.embrc.eu/ns/core#1>
+<https://data.emobon.embrc.eu/ns/core#hard>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
-        dc:identifier          '1'@und ;
+        dc:identifier          'Hard'@und ;
         skos:prefLabel         'Hard'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/core#2>
+<https://data.emobon.embrc.eu/ns/core#soil>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
-        dc:identifier          '2'@und ;
+        dc:identifier          'Soil'@und ;
         skos:prefLabel         'Soil'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/core#3>
+<https://data.emobon.embrc.eu/ns/core#water>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
-        dc:identifier          '3'@und ;
+        dc:identifier          'Water'@und ;
         skos:prefLabel         'Water'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/core#4>
+<https://data.emobon.embrc.eu/ns/core#blankSample>
         rdf:type               skos:Concept ;
         dc:date                "2025-03-10" ;
-        dc:identifier          '4'@und ;
+        dc:identifier          'Blank Sample'@und ;
         skos:prefLabel         'Blank Sample'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/core#5>
+<https://data.emobon.embrc.eu/ns/core#fieldSample>
         rdf:type               skos:Concept ;
         dc:date                "2025-03-10" ;
-        dc:identifier          '5'@und ;
+        dc:identifier          'Field Sample'@und ;
         skos:prefLabel         'Field Sample'@en ;
         .
