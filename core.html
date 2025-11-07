@@ -61,16 +61,25 @@
     ]
   },
   {
-    "@id": "https://www.embrc.eu",
-    "https://schema.org/name": [
+    "@id": "https://orcid.org/0000-0003-0663-5907",
+    "https://schema.org/affiliation": [
       {
-        "@language": "en",
-        "@value": "European Marine Biological Resource Centre"
+        "@id": "https://www.vliz.be"
       }
     ],
-    "https://schema.org/url": [
+    "https://schema.org/email": [
       {
-        "@id": "https://www.embrc.eu"
+        "@id": "mailto:laurian.van.maldeghem@vliz.be"
+      }
+    ],
+    "https://schema.org/identifier": [
+      {
+        "@id": "https://orcid.org/0000-0003-0663-5907"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "Laurian Van Maldeghem"
       }
     ]
   },
@@ -98,24 +107,6 @@
     ]
   },
   {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
-      {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.vliz.be/"
-      }
-    ]
-  },
-  {
     "@id": "https://orcid.org/0000-0001-7251-9504",
     "https://schema.org/affiliation": [
       {
@@ -139,25 +130,34 @@
     ]
   },
   {
-    "@id": "https://orcid.org/0000-0003-0663-5907",
-    "https://schema.org/affiliation": [
-      {
-        "@id": "https://www.vliz.be"
-      }
-    ],
-    "https://schema.org/email": [
-      {
-        "@id": "mailto:laurian.van.maldeghem@vliz.be"
-      }
-    ],
-    "https://schema.org/identifier": [
-      {
-        "@id": "https://orcid.org/0000-0003-0663-5907"
-      }
-    ],
+    "@id": "https://www.vliz.be/",
     "https://schema.org/name": [
       {
-        "@value": "Laurian Van Maldeghem"
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.embrc.eu",
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "European Marine Biological Resource Centre"
+      }
+    ],
+    "https://schema.org/url": [
+      {
+        "@id": "https://www.embrc.eu"
       }
     ]
   }
@@ -1358,12 +1358,12 @@
 </th>
 <td>
 <span>
-<a href="#Observatory">core:Observatory</a>
+<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 <span class="cardinality">or</span>
 <span>
-<a href="http://www.w3.org/ns/sosa/Sampling">sosa:Sampling</a>
+<a href="#Observatory">core:Observatory</a>
 <sup class="sup-c" title="OWL/RDFS Class">c</sup>
 </span>
 </td>

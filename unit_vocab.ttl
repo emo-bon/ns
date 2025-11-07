@@ -7,12 +7,12 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-13" ;
         dc:identifier          'cells_per_sampleUnit'@und ;
-        skos:prefLabel         ' "cells_per_sampleUnit"'@en ;
+        skos:prefLabel         ' cells_per_sampleUnit'@en ;
         .
 
 <https://data.emobon.embrc.eu/ns/unit#micrograms_cubicmetre_day>
         rdf:type               skos:Concept ;
         dc:date                " 2025-03-25" ;
         dc:identifier          'micrograms_cubicmetre_day'@und ;
-        skos:prefLabel         ' "micrograms_cubicmetre_day"'@en ;
+        skos:prefLabel         ' micrograms_cubicmetre_day'@en ;
         .
