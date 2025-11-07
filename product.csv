@@ -1,7 +1,7 @@
-"ID","DATE","PREFLABEL_EN","DEFINITION_EN","ALTLABEL_EN","BROADER","NARROWER"
-"GO",2024-04-11,"GO","fucntional annotation representing a Gene Ontology term","GO",,
-"GO_SLIM",2024-04-11,"GO SLIM","fucntional annotation representing a Gene Ontology term","GO_SLIM",,
-"InterPro",2024-04-11,"InterPro","functional annotation representing an InterPro (InterProScan summary protein family) term","InterPro",,
-"KEGG",2024-04-11,"KEGG","functional annotation representing a KEGG ontology term","KEGG",,
-"PFAM",2024-04-11,"PFAM","functional annotation representing a PFAM (protein family) term","PFAM",,
-"EGGNOG",2024-04-11,"EGGNOG","functional annotation representing a EGGNOG (Orthology relationships, functional annotation, and gene evolutionary histories) term","EGGNOG",,
+ID,DATE,PREFLABEL_EN,DEFINITION_EN,ALTLABEL_EN,BROADER,NARROWER
+GO,2024-04-11,GO,fucntional annotation representing a Gene Ontology term,GO,,
+GO_SLIM,2024-04-11,GO SLIM,fucntional annotation representing a Gene Ontology term,GO_SLIM,,
+InterPro,2024-04-11,InterPro,functional annotation representing an InterPro (InterProScan summary protein family) term,InterPro,,
+KEGG,2024-04-11,KEGG,functional annotation representing a KEGG ontology term,KEGG,,
+PFAM,2024-04-11,PFAM,functional annotation representing a PFAM (protein family) term,PFAM,,
+EGGNOG,2024-04-11,EGGNOG,functional annotation representing a EGGNOG (Orthology relationships, functional annotation, and gene evolutionary histories) term,EGGNOG,,
