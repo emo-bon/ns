@@ -295,6 +295,7 @@
 <{{baseuri}}/{{name}}#sampleReplicate>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <{{baseuri}}/{{name}}> ;
+    rdfs:seeAlso        <https://vocab.nerc.ac.uk/collection/P01/current/IDTCRE01/> ; 
     rdfs:comment        "Replicate number of the sample or Blank"@en ;
     rdfs:label          "sample replicate"@en ;
     rdfs:domain         sosa:Sample ;
