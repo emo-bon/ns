@@ -142,7 +142,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         skos:prefLabel         'GO'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/product#go_slim>
+<https://data.emobon.embrc.eu/ns/product#go_SLIM>
         rdf:type               skos:Concept ;
         dc:date                "2024-04-11" ;
         dc:identifier          'GO_SLIM'@und ;
