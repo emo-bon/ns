@@ -295,7 +295,7 @@
 <https://data.emobon.embrc.eu/ns/sampling#sampleReplicate>
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
-    rdfs:seeAlso        <https://vocab.nerc.ac.uk/collection/P01/current/IDTCRE01/> ; 
+    rdfs:seeAlso        <https://vocab.nerc.ac.uk/collection/P01/current/IDBIRE01/> , <https://vocab.nerc.ac.uk/collection/P01/current/IDSPRE01/> ; 
     rdfs:comment        "Replicate number of the sample or Blank"@en ;
     rdfs:label          "sample replicate"@en ;
     rdfs:domain         sosa:Sample ;
