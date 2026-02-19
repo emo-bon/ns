@@ -1,7 +1,7 @@
 @prefix ro: <https://w3id.org/ro/crate/1.0/context#> .
 @prefix gov: <{{baseuri}}/{{name}}#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -15,16 +15,16 @@
     a owl:Ontology;
     rdfs:label       "emobon governance-ontology"@en ;
     rdfs:comment     "EMO-BON governance ontology for describing TODO"@en ;
-    dc:issued        "2022-12-07"^^xsd:date ;
-    dc:modified      "2025-10-21"^^xsd:date ;
-    dc:license       <https://creativecommons.org/licenses/by/4.0/> ;
-    dc:creator
+    dct:issued        "2022-12-07"^^xsd:date ;
+    dct:modified      "2025-10-21"^^xsd:date ;
+    dct:license       <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:creator
     [
         schema:name         "VLIZ Open Science team" ;
         schema:email        <mailto:opsci@vliz.org> ;
 	      schema:affiliation  <https://www.vliz.be/> ;
     ] ;
-    dc:contributor
+    dct:contributor
     [
         schema:name         "Katrina Exter" ;
         schema:identifier   <https://orcid.org/0000-0002-5911-1536> ;
