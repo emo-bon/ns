@@ -414,7 +414,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         skos:prefLabel         'GENOMIC'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/sequence#genomic SINGLE CELL>
+<https://data.emobon.embrc.eu/ns/sequence#genomicSingleCell>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
         dc:identifier          'GENOMIC SINGLE CELL'@und ;
@@ -428,7 +428,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
         skos:prefLabel         'TRANSCRIPTOMIC'@en ;
         .
 
-<https://data.emobon.embrc.eu/ns/sequence#transcriptomicSingleCell>
+<https://data.emobon.embrc.eu/ns/sequence#transcriptomic SINGLE CELL>
         rdf:type               skos:Concept ;
         dc:date                "2024-08-30" ;
         dc:identifier          'TRANSCRIPTOMIC SINGLE CELL'@und ;
