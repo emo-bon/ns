@@ -7,6 +7,7 @@
 <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png"/>
 <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png"/>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <script id="schema.org" type="application/ld+json">
 [
   {
@@ -20,24 +21,6 @@
     "https://schema.org/url": [
       {
         "@id": "https://www.embrc.eu"
-      }
-    ]
-  },
-  {
-    "@id": "https://www.vliz.be/",
-    "https://schema.org/name": [
-      {
-        "@language": "nl",
-        "@value": "Vlaams Instituut voor de Zee"
-      },
-      {
-        "@language": "en",
-        "@value": "Flanders Marine Institute"
-      }
-    ],
-    "https://schema.org/url": [
-      {
-        "@id": "https://www.vliz.be/"
       }
     ]
   },
@@ -76,6 +59,24 @@
       }
     ],
     "https://schema.org/publisher": [
+      {
+        "@id": "https://www.vliz.be/"
+      }
+    ]
+  },
+  {
+    "@id": "https://www.vliz.be/",
+    "https://schema.org/name": [
+      {
+        "@language": "nl",
+        "@value": "Vlaams Instituut voor de Zee"
+      },
+      {
+        "@language": "en",
+        "@value": "Flanders Marine Institute"
+      }
+    ],
+    "https://schema.org/url": [
       {
         "@id": "https://www.vliz.be/"
       }
@@ -132,7 +133,7 @@
 </div>
 <div>
 <dt>
-<a class="hover_property" href="http://purl.org/dc/terms/issued" title="Date of formal issuance of the resource. Defined in DCMI Metadata Terms">Date Issued</a>
+<a class="hover_property" href="http://purl.org/dc/terms/issued" title="Recommended practice is to describe the date, date/time, or period of time as recommended for the property Date, of which this is a subproperty. Defined in DCMI Metadata Terms">Date Issued</a>
 </dt>
 <dd><p>2023-03-17</p></dd>
 </div>
@@ -164,13 +165,43 @@
 </dt>
 <dd><p>The Sampling EMO-BON ontology provides definitions for the sampling classes and properties used in EMO-BON data.</p></dd>
 </div>
+<div>
+<dt>
+<a class="hover_property" href="http://purl.org/dc/elements/1.1/license" title="None. Defined in None">License</a>
+</dt>
+<dd>
+<a href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>
+</dd>
+</div>
+<div>
+<dt>
+<a class="hover_property" href="http://xmlns.com/foaf/0.1/homepage" title="None. Defined in None">Homepage</a>
+</dt>
+<dd>
+<a href="https://marineregions.org/ontology/documentation.html">https://marineregions.org/ontology/documentation.html</a>
+</dd>
+</div>
 </dl>
 </div>
 <div class="section" id="classes">
 <h2>Classes</h2>
+<h3 id="class-hierarchy">Class Hierarchy</h3>
+<div class="hierarchy">
+<ul class="hierarchy"></ul>
+</div>
+<h3 id="class-definitions">Class Definitions</h3>
 </div>
 <div class="section" id="objectproperties">
 <h2>Object Properties</h2>
+<h3 id="object-property-hierarchy">Object Property Hierarchy</h3>
+<div class="hierarchy">
+<ul class="hierarchy">
+<li>
+<a href="#linkedToObservatory">is linked to observatory</a>
+</li>
+</ul>
+</div>
+<h3 id="object-property-definitions">Object Property Definitions</h3>
 <div class="property entity" id="linkedToObservatory">
 <h3>is linked to observatory
             <sup class="sup-op" title="OWL Object Property">op</sup>
@@ -995,7 +1026,7 @@
 </table>
 </div>
 <div class="property entity" id="hasSampleSize">
-<h3>has ENA sample accession number
+<h3>The size of the collected sample
             <sup class="sup-dp" title="OWL Datatype Property">dp</sup>
 </h3>
 <table>
@@ -1150,6 +1181,21 @@
 </tr>
 <tr>
 <th>
+<a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#seeAlso" title="Further information about the subject resource. Defined in The RDF Schema vocabulary (RDFS)">See Also</a>
+</th>
+<td>
+<ul class="pylodelitlist">
+<li>
+<a href="https://vocab.nerc.ac.uk/collection/P01/current/IDBIRE01/">https://vocab.nerc.ac.uk/collection/P01/current/IDBIRE01/</a>
+</li>
+<li>
+<a href="https://vocab.nerc.ac.uk/collection/P01/current/IDSPRE01/">https://vocab.nerc.ac.uk/collection/P01/current/IDSPRE01/</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th>
 <a class="hover_property" href="http://www.w3.org/2000/01/rdf-schema#domain" title="A domain of the subject property. Defined in The RDF Schema vocabulary (RDFS)">Domain</a>
 </th>
 <td>
@@ -1293,6 +1339,14 @@
 <a href="http://qudt.org/schema/qudt/QuantityValue">qudt:QuantityValue</a>
 </td>
 </tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2002/07/owl#seeAlse" title="None. Defined in None">See Alse</a>
+</th>
+<td>
+<a href="http://vocab.nerc.ac.uk/collection/P01/current/PRSZSPLW/">http://vocab.nerc.ac.uk/collection/P01/current/PRSZSPLW/</a>
+</td>
+</tr>
 </table>
 </div>
 <div class="property entity" id="upperFilterSize">
@@ -1334,6 +1388,14 @@
 </th>
 <td>
 <a href="http://qudt.org/schema/qudt/QuantityValue">qudt:QuantityValue</a>
+</td>
+</tr>
+<tr>
+<th>
+<a class="hover_property" href="http://www.w3.org/2002/07/owl#seeAlse" title="None. Defined in None">See Alse</a>
+</th>
+<td>
+<a href="http://vocab.nerc.ac.uk/collection/P01/current/PRSZSPUP/">http://vocab.nerc.ac.uk/collection/P01/current/PRSZSPUP/</a>
 </td>
 </tr>
 </table>
@@ -1597,9 +1659,9 @@
 <span id="y">y</span>
 <span>LODE</span>
 </a>
-<a href="https://github.com/rdflib/pyLODE/release/3.2.3" id="version">3.2.3</a>
+<a href="https://github.com/rdflib/pyLODE/release/3.6.0" id="version">3.6.0</a>
 <span> with the </span>
-<a href="https://w3id.org/profile/ontpub" id="profile">OntPub</a>
+<a href="https://linked.data.gov.au/def/ontpub" id="profile">OntPub</a>
 <span>profile</span>
 </p>
 </div>
@@ -1615,8 +1677,14 @@
 <h4>
 <a href="#objectproperties">Object Properties</a>
 </h4>
+<h5>
+<a href="#object-property-hierarchy" style="margin-left:10px;">Object Property Hierarchy</a>
+</h5>
+<h5>
+<a href="#object-property-definitions" style="margin-left:10px;">Object Property Definitions</a>
+</h5>
 <ul class="second">
-<li>
+<li style="margin-left:10px;">
 <a href="#linkedToObservatory">is linked to observatory</a>
 </li>
 </ul>
@@ -1678,7 +1746,7 @@
 <a href="#filtrationTime">Filtration time</a>
 </li>
 <li>
-<a href="#hasSampleSize">has ENA sample accession number</a>
+<a href="#hasSampleSize">The size of the collected sample</a>
 </li>
 <li>
 <a href="#failure">sample failure</a>

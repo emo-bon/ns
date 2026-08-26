@@ -268,7 +268,7 @@
     a                   owl:DatatypeProperty ;
     rdfs:isDefinedBy    <https://data.emobon.embrc.eu/ns/sampling> ;
     rdfs:comment        "The size of the collected sample"@en ;
-    rdfs:label          "has ENA sample accession number"@en ;
+    rdfs:label          "The size of the collected sample"@en ;
     rdfs:domain         sosa:Sample ;
     rdfs:range          qudt:QuantityValue ;
 .
